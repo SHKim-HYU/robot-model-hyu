@@ -1,0 +1,30 @@
+stages:
+  - testing
+
+# shorthand for testing
+.test_template: &template
+  image: alejandroastudillo/tasho-base
+  before_script:
+    - source activate tasho-base
+    - rm -rf .pip
+    - pip --no-cache-dir install casadi rockit-meco coverage nose
+    - python setup.py install
+    - rm -rfv /tmp/*
+  cache:
+    paths:
+      - .pip
+
+testing:unittests:
+  stage: testing
+  <<: *template
+  script:
+    - nosetests --with-coverage --cover-html --cover-package=robotsMECO
+  artifacts:
+    paths:
+      - cover
+
+testing:examples:
+  stage: testing
+  <<: *template
+  script:
+    - find examples -name "*.py" -not -path "*/wip/*" | xargs -n 1 python
