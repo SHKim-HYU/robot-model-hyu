@@ -9,7 +9,8 @@
         "y": "0",
         "z": "-9.8100000000000005"
     },
-    "forward_kinematics_path": "anka/Panda/panda_fd.casadi",
+    "forward_kinematics_path": "Franka/Panda/panda_fk.casadi",
+    "forward_dynamics_path": "Franka/Panda/panda_fd.casadi",
     "inverse_dynamics_path": "Franka/Panda/panda_id.casadi",
     "Jacobian_forward_dynamics_path": "Franka/Panda/panda_J_fd.casadi",
     "Jacobian_inverse_dynamics_path": "Franka/Panda/panda_J_id.casadi",
