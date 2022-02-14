@@ -1,6 +1,6 @@
 from robotsMECO import Robot as rob
 
-myRobot = rob.Robot('kinova')
+myRobot = rob.Robot('yumi')
 
 
 q_init = myRobot.generate_random_configuration()
@@ -11,4 +11,4 @@ fwd_dyn = myRobot.fd
 
 inv_dyn = myRobot.id
 
-print(myRobot.fk(q_init))
+print(fwd_dyn)
