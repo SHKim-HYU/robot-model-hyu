@@ -23,8 +23,8 @@ testing:unittests:
     paths:
       - cover
 
-testing:examples:
-  stage: testing
-  <<: *template
-  script:
-    - find examples -name "*.py" -not -path "*/wip/*" | xargs -n 1 python
+# testing:examples:
+#   stage: testing
+#   <<: *template
+#   script:
+#     - find examples -name "*.py" -not -path "*/wip/*" | xargs -n 1 python

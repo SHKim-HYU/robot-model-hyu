@@ -16,7 +16,7 @@ class TestRobot(unittest.TestCase):
         lb = [-3.14, -2, -3.14, -2, -3.14, -2, -3.14]
         ub = [3.14, 2, 3.14, 2, 3.14, 2, 3.14]
 
-        # rob_kinova.set_joint_limits()
+        rob_kinova.set_joint_limits()
         self.assertTrue(
             (np.isposinf(rob_kinova.joint_ub.full())).all(),
             "Kinova Gen3 - joint_ub assert failed",
