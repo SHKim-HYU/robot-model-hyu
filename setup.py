@@ -21,6 +21,7 @@ setuptools.setup(
     long_description_content_type="text/markdown",
     url=URL,
     packages=setuptools.find_packages(),
+    include_package_data=True,
     install_requires=[
         'casadi>=3.4,<4.0',
     ],
