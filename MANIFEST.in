@@ -1,6 +1,5 @@
 # Include the json and casadi files under robots/
-recursive-include robotsMECO/robots *.json *.casadi
+# recursive-include robotsMECO/robots *.json *.casadi
+graft robotsMECO/robots
+global-exclude *.stl *.STL *.dae *.obj *.urdf .gitignore
 
-# include *.txt
-
-# prune examples/sample?/build
