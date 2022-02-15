@@ -1,6 +1,6 @@
 import setuptools
 
-NAME = "robotsMECO"
+NAME = "robotsmeco"
 VERSION = "0.0.1"
 AUTHORS = "Alejandro Astudillo, Ajay Sathya"
 MAINTAINER_EMAIL = "alejandro.astudillovigoya@kuleuven.be"

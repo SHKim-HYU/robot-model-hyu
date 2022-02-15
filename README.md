@@ -2,6 +2,10 @@
 
 A repository of robot models built with Pinocchio and CasADi.
 
+## Installation
+
+Execute `pip install git+https://gitlab.kuleuven.be/meco-software/robot-models-meco.git@main`
+
 ## Available robots
 | Robot | Degrees of freedom | Alias |
 |-------|-------------|-------|

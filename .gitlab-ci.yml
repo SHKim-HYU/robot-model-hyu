@@ -18,7 +18,7 @@ testing:unittests:
   stage: testing
   <<: *template
   script:
-    - nosetests --with-coverage --cover-html --cover-package=robotsMECO
+    - nosetests --with-coverage --cover-html --cover-package=robotsmeco
   artifacts:
     paths:
       - cover
