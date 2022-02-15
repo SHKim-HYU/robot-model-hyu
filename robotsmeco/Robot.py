@@ -238,7 +238,7 @@ class Robot:
 
         from os.path import join, dirname, abspath
 
-        robots_dir = join(dirname(dirname(str(abspath(__file__)))), "robotsMECO/robots/")
+        robots_dir = join(dirname(dirname(str(abspath(__file__)))), "robotsmeco/robots/")
 
         print("Loading robot params from json ...")
         # with open("./models/robots/" + self.name + ".json", "r") as f:
