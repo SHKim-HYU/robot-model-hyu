@@ -1,0 +1,71 @@
+{
+    "name": "m0609",
+    "n_dof": "6",
+    "n_joints": "7",
+    "n_q": "6",
+    "n_frames": "21",
+    "gravity": {
+        "x": "0",
+        "y": "0",
+        "z": "-9.8100000000000005"
+    },
+    "forward_kinematics_path": "/m0609/m0609_fk.casadi",
+    "forward_dynamics_path": "/m0609/m0609_fd.casadi",
+    "inverse_dynamics_path": "/m0609/m0609_id.casadi",
+    "Jacobian_forward_dynamics_path": "/m0609/m0609_J_fd.casadi",
+    "Jacobian_inverse_dynamics_path": "/m0609/m0609_J_id.casadi",
+    "mass_matrix_path": "/m0609/m0609_M.casadi",
+    "mass_inverse_matrix_path": "/m0609/m0609_Minv.casadi",
+    "coriolis_path": "/m0609/m0609_C.casadi",
+    "gravity_path": "/m0609/m0609_G.casadi",
+    "joints": {
+        "joint1": {
+            "joint_types": "JointModelRZ",
+            "joint_pos_ub": "2.617",
+            "joint_pos_lb": "-2.617",
+            "joint_torque_limit": "30",
+            "joint_vel_limit": "1.571",
+            "joint_acc_limit": "2.5"
+        },
+        "joint2": {
+            "joint_types": "JointModelRZ",
+            "joint_pos_ub": "2.617",
+            "joint_pos_lb": "-2.617",
+            "joint_torque_limit": "30",
+            "joint_vel_limit": "1.571",
+            "joint_acc_limit": "2.5"
+        },
+        "joint3": {
+            "joint_types": "JointModelRZ",
+            "joint_pos_ub": "2.617",
+            "joint_pos_lb": "-2.617",
+            "joint_torque_limit": "30",
+            "joint_vel_limit": "1.571",
+            "joint_acc_limit": "2.5"
+        },
+        "joint4": {
+            "joint_types": "JointModelRZ",
+            "joint_pos_ub": "2.617",
+            "joint_pos_lb": "-2.617",
+            "joint_torque_limit": "30",
+            "joint_vel_limit": "1.571",
+            "joint_acc_limit": "2.5"
+        },
+        "joint5": {
+            "joint_types": "JointModelRZ",
+            "joint_pos_ub": "2.617",
+            "joint_pos_lb": "-2.617",
+            "joint_torque_limit": "30",
+            "joint_vel_limit": "1.571",
+            "joint_acc_limit": "2.5"
+        },
+        "joint6": {
+            "joint_types": "JointModelRZ",
+            "joint_pos_ub": "2.617",
+            "joint_pos_lb": "-2.617",
+            "joint_torque_limit": "30",
+            "joint_vel_limit": "1.571",
+            "joint_acc_limit": "2.5"
+        }
+    }
+}

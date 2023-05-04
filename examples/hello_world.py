@@ -1,4 +1,4 @@
-from robotsmeco import Robot as rob
+from robotshyu import Robot as rob
 
 myRobot = rob.Robot('yumi')
 

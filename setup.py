@@ -1,12 +1,12 @@
 import setuptools
 
-NAME = "robotsmeco"
+NAME = "robotshyu"
 VERSION = "0.0.1"
-AUTHORS = "Alejandro Astudillo, Ajay Sathya"
-MAINTAINER_EMAIL = "alejandro.astudillovigoya@kuleuven.be"
+AUTHORS = "Alejandro Astudillo, Ajay Sathya, Sunhong Kim"
+MAINTAINER_EMAIL = "tjsghd101@hanyang.ac.kr"
 DESCRIPTION = "A repository of robot models built with Pinocchio and CasADi"
 KEYWORDS = "robot models pinocchio casadi"
-URL = "https://gitlab.kuleuven.be/meco-software/robot-models-meco"
+URL = "https://github.com/SHKim-HYU/robot-model-hyu"
 LICENSE = 'GNU LGPLv3'
 
 setuptools.setup(
