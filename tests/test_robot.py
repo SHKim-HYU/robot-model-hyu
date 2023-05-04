@@ -1,5 +1,5 @@
 import unittest
-from robotsmeco import Robot as rob
+from robotshyu import Robot as rob
 import numpy as np
 from math import inf
 
