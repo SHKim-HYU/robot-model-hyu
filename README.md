@@ -1,12 +1,20 @@
 # Robot-models-HYU
 
 A repository of robot models built with Pinocchio and CasADi.
+To build URDF2CasADi function, please refer to "urdf2modelcasadi" (https://github.com/alejandroastudillo/urdf2modelcasadi)
 
 Inspired by Robot-models-meco, Meco team, KU Leuven (https://gitlab.kuleuven.be/meco-software/robot-models-meco)
 
+
 ## Installation
-clone 'git clone https://github.com/SHKim-HYU/robot-model-hyu'
-Execute `pip install .`
+clone 
+'''
+git clone https://github.com/SHKim-HYU/robot-model-hyu.git
+'''
+Execute 
+'''
+pip install .
+'''
 
 ## Available robots
 | Robot | Degrees of freedom | Alias |
