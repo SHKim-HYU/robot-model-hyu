@@ -39,19 +39,6 @@
   </material>
   <link name="world"/>
   <link name="link0">
-    <visual>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
-      <geometry>
-        <mesh filename="meshes/stl/IndyRP2_0.stl"/>
-      </geometry>
-      <material name="metal_grey"/>
-    </visual>
-    <collision>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
-      <geometry>
-        <mesh filename="meshes/stl/IndyRP2_0.stl"/>
-      </geometry>
-    </collision>
     <inertial>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <mass value="5.44309"/>
@@ -59,19 +46,6 @@
     </inertial>
   </link>
   <link name="link1">
-    <visual>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
-      <geometry>
-        <mesh filename="meshes/stl/IndyRP2_1.stl"/>
-      </geometry>
-      <material name="metal_grey"/>
-    </visual>
-    <collision>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
-      <geometry>
-        <mesh filename="meshes/stl/IndyRP2_1.stl"/>
-      </geometry>
-    </collision>
     <inertial>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <mass value="5.50328"/>
@@ -79,19 +53,6 @@
     </inertial>
   </link>
   <link name="link2">
-    <visual>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
-      <geometry>
-        <mesh filename="meshes/stl/IndyRP2_2.stl"/>
-      </geometry>
-      <material name="metal_grey"/>
-    </visual>
-    <collision>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
-      <geometry>
-        <mesh filename="meshes/stl/IndyRP2_2.stl"/>
-      </geometry>
-    </collision>
     <inertial>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <mass value="5.95397"/>
@@ -99,19 +60,6 @@
     </inertial>
   </link>
   <link name="link3">
-    <visual>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
-      <geometry>
-        <mesh filename="meshes/stl/IndyRP2_3.stl"/>
-      </geometry>
-      <material name="metal_grey"/>
-    </visual>
-    <collision>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
-      <geometry>
-        <mesh filename="meshes/stl/IndyRP2_3.stl"/>
-      </geometry>
-    </collision>
     <inertial>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <mass value="4.08259"/>
@@ -119,19 +67,6 @@
     </inertial>
   </link>
   <link name="link4">
-    <visual>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
-      <geometry>
-        <mesh filename="meshes/stl/IndyRP2_4.stl"/>
-      </geometry>
-      <material name="metal_grey"/>
-    </visual>
-    <collision>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
-      <geometry>
-        <mesh filename="meshes/stl/IndyRP2_4.stl"/>
-      </geometry>
-    </collision>
     <inertial>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <mass value="4.02733"/>
@@ -139,19 +74,6 @@
     </inertial>
   </link>
   <link name="link5">
-    <visual>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
-      <geometry>
-        <mesh filename="meshes/stl/IndyRP2_5.stl"/>
-      </geometry>
-      <material name="metal_grey"/>
-    </visual>
-    <collision>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
-      <geometry>
-        <mesh filename="meshes/stl/IndyRP2_5.stl"/>
-      </geometry>
-    </collision>
     <inertial>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <mass value="2.52863"/>
@@ -159,19 +81,6 @@
     </inertial>
   </link>
   <link name="link6">
-    <visual>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
-      <geometry>
-        <mesh filename="meshes/stl/IndyRP2_6.stl"/>
-      </geometry>
-      <material name="metal_grey"/>
-    </visual>
-    <collision>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
-      <geometry>
-        <mesh filename="meshes/stl/IndyRP2_6.stl"/>
-      </geometry>
-    </collision>
     <inertial>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <mass value="2.03152"/>
@@ -179,19 +88,6 @@
     </inertial>
   </link>
   <link name="link7">
-    <visual>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
-      <geometry>
-        <mesh filename="meshes/stl/IndyRP2_7.stl"/>
-      </geometry>
-      <material name="metal_grey"/>
-    </visual>
-    <collision>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
-      <geometry>
-        <mesh filename="meshes/stl/IndyRP2_7.stl"/>
-      </geometry>
-    </collision>
     <inertial>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <mass value="0.17194"/>
@@ -200,10 +96,16 @@
   </link>
   <link name="tcp">
     <inertial>
-      <mass value="0.000001" />
-      <origin xyz="0.0 0.0 0.0" rpy="0 0 0" />
-      <inertia ixx="0.000001" ixy="0" ixz="0" iyy="0.000001" iyz="0" izz="0.000001" />
+          <mass value="0.000001" />
+          <origin xyz="0.0 0.0 0.0" rpy="0 0 0" />
+          <inertia ixx="0.000001" ixy="0" ixz="0" iyy="0.000001" iyz="0" izz="0.000001" />
     </inertial>
+    <visual>
+      <origin rpy="1.5709 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="meshes/frame/untitled.obj" scale="0.05 0.05 0.05"/>
+      </geometry>
+    </visual>
   </link>
   <joint name="global" type="fixed">
     <parent link="world"/>

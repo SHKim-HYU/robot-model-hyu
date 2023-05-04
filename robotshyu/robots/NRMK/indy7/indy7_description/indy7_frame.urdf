@@ -81,19 +81,6 @@
   </gazebo>
   <!-- <material name="grey"> <color rgba="0.5 0.5 0.5 1"/> </material> -->
   <link name="link0">
-    <visual>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
-      <geometry>
-        <mesh filename="meshes/stl/Indy7_0.stl"/>
-      </geometry>
-      <material name="metal_grey"/>
-    </visual>
-    <collision>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
-      <geometry>
-        <cylinder length="0.075" radius="0.102"/>
-      </geometry>
-    </collision>
     <inertial>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <mass value="1.59306955"/>
@@ -101,25 +88,6 @@
     </inertial>
   </link>
   <link name="link1">
-    <visual>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
-      <geometry>
-        <mesh filename="meshes/stl/Indy7_1.stl"/>
-      </geometry>
-      <material name="metal_grey"/>
-    </visual>
-    <collision>
-      <origin rpy="0 0 0" xyz="0 0 0.111"/>
-      <geometry>
-        <cylinder length="0.222" radius="0.075"/>
-      </geometry>
-    </collision>
-    <collision>
-      <origin rpy="1.5707963267948966 0 0" xyz="0 -0.0545 0.222"/>
-      <geometry>
-        <cylinder length="0.109" radius="0.075"/>
-      </geometry>
-    </collision>
     <inertial>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <mass value="11.8030102"/>
@@ -127,31 +95,6 @@
     </inertial>
   </link>
   <link name="link2">
-    <visual>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
-      <geometry>
-        <mesh filename="meshes/stl/Indy7_2.stl"/>
-      </geometry>
-      <material name="metal_grey"/>
-    </visual>
-    <collision>
-      <origin rpy="1.5707963267948966 0 -1.5707963267948966" xyz="-0.225 0 0.09"/>
-      <geometry>
-        <cylinder length="0.450" radius="0.063"/>
-      </geometry>
-    </collision>
-    <collision>
-      <origin rpy="0 0 0" xyz="0 0 0.045"/>
-      <geometry>
-        <cylinder length="0.09" radius="0.075"/>
-      </geometry>
-    </collision>
-    <collision>
-      <origin rpy="0 0 0" xyz="-0.45 0 0.02975 "/>
-      <geometry>
-        <cylinder length="0.1205" radius="0.045"/>
-      </geometry>
-    </collision>
     <inertial>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <mass value="7.99292141"/>
@@ -159,25 +102,6 @@
     </inertial>
   </link>
   <link name="link3">
-    <visual>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
-      <geometry>
-        <mesh filename="meshes/stl/Indy7_3.stl"/>
-      </geometry>
-      <material name="metal_grey"/>
-    </visual>
-    <collision>
-      <origin rpy="1.5707963267948966 0 -1.5707963267948966" xyz="-0.1335 0 -0.075"/>
-      <geometry>
-        <cylinder length="0.267" radius="0.045"/>
-      </geometry>
-    </collision>
-    <collision>
-      <origin rpy="0 0 0" xyz="0 0 -0.0375"/>
-      <geometry>
-        <cylinder length="0.075" radius="0.045"/>
-      </geometry>
-    </collision>
     <inertial>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <mass value="2.99134127"/>
@@ -185,31 +109,6 @@
     </inertial>
   </link>
   <link name="link4">
-    <visual>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
-      <geometry>
-        <mesh filename="meshes/stl/Indy7_4.stl"/>
-      </geometry>
-      <material name="metal_grey"/>
-    </visual>
-    <collision>
-      <origin rpy="1.5707963267948966 0 0" xyz="0 -0.057 0.083"/>
-      <geometry>
-        <cylinder length="0.114" radius="0.045"/>
-      </geometry>
-    </collision>
-    <collision>
-      <origin rpy="1.5707963267948966 0 0" xyz="0 -0.057 0.083"/>
-      <geometry>
-        <cylinder length="0.114" radius="0.045"/>
-      </geometry>
-    </collision>
-    <collision>
-      <origin rpy="0 0 0" xyz="0 0 0.0415"/>
-      <geometry>
-        <cylinder length="0.083" radius="0.045"/>
-      </geometry>
-    </collision>
     <inertial>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <mass value="2.12317035"/>
@@ -217,25 +116,6 @@
     </inertial>
   </link>
   <link name="link5">
-    <visual>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
-      <geometry>
-        <mesh filename="meshes/stl/Indy7_5.stl"/>
-      </geometry>
-      <material name="metal_grey"/>
-    </visual>
-    <collision>
-      <origin rpy="1.5707963267948966 0 -1.5707963267948966" xyz="-0.084 0 0.069"/>
-      <geometry>
-        <cylinder length="0.168" radius="0.045"/>
-      </geometry>
-    </collision>
-    <collision>
-      <origin rpy="0 0 0" xyz="-0 0 0.0345"/>
-      <geometry>
-        <cylinder length="0.069" radius="0.045"/>
-      </geometry>
-    </collision>
     <inertial>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <mass value="2.28865091"/>
@@ -243,19 +123,6 @@
     </inertial>
   </link>
   <link name="link6">
-    <visual>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
-      <geometry>
-        <mesh filename="meshes/stl/Indy7_6.stl"/>
-      </geometry>
-      <material name="metal_grey"/>
-    </visual>
-    <collision>
-      <origin rpy="0 0 0" xyz="0 0 0.03"/>
-      <geometry>
-        <cylinder length="0.06" radius="0.045"/>
-      </geometry>
-    </collision>
     <inertial>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <mass value="0.40083918"/>
@@ -268,6 +135,12 @@
       <origin xyz="0.0 0.0 0.0" rpy="0 0 0" />
       <inertia ixx="0.000001" ixy="0" ixz="0" iyy="0.000001" iyz="0" izz="0.000001" />
     </inertial>
+    <visual>
+      <origin rpy="1.5709 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="meshes/frame/untitled.obj" scale="0.05 0.05 0.05"/>
+      </geometry>
+    </visual>
   </link>
   <joint name="joint0" type="revolute">
     <parent link="link0"/>
