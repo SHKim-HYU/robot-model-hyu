@@ -8,13 +8,13 @@ Inspired by Robot-models-meco, Meco team, KU Leuven (https://gitlab.kuleuven.be/
 
 ## Installation
 * clone 
-'''
+```
 git clone https://github.com/SHKim-HYU/robot-model-hyu.git
-'''
+```
 * Execute 
-'''
+```
 pip install .
-'''
+```
 
 ## Available robots
 | Robot | Degrees of freedom | Alias |
