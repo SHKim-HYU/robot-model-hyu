@@ -37,14 +37,14 @@ pip install .
 | Indy-RP2	|	7	|	`indy_rp2`	|
 
 For every robot in the table, this repository includes functions for:
-- Forward dynamics
-- Inverse dynamics
-	- Mass matrix
-	- Mass inverse matrix
-	- Coriollis
-	- Gravity
-- Forward kinematics
-	- Space Jacobian
-	- Body Jacobian
+- Forward dynamics(q, qdot, tau)
+- Inverse dynamics(q, qdot, qddot)
+	- Mass matrix(q)
+	- Mass inverse matrix(q)
+	- Coriollis(q, qdot)
+	- Gravity(q)
+- Forward kinematics(q)[0:ndof]
+	- Space Jacobian(q)
+	- Body Jacobian(q)
 - Analytical derivatives of forward dynamics
 - Analytical derivatives of inverse dynamics

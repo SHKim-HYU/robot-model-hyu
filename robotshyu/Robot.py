@@ -331,26 +331,34 @@ class Robot:
             self.joint_acc_ub = _joints_acc_ub
             self.joint_acc_lb = _joints_acc_lb
         # TODO: Set ub or lb to infinity if they are not included in json
-
+        # arg: q, qdot, tau
         self.fd = Function.load(robots_dir + str(json_dict["forward_dynamics_path"]))
+        # arg: q, qdot, qddot
         self.id = Function.load(robots_dir + str(json_dict["inverse_dynamics_path"]))
+        # arg: q
         self.fk = Function.load(robots_dir + str(json_dict["forward_kinematics_path"]))
 
         self.J_fd = Function.load(robots_dir + str(json_dict["Jacobian_forward_dynamics_path"]))
         self.J_id = Function.load(robots_dir + str(json_dict["Jacobian_inverse_dynamics_path"]))
 
         if 'Jacobian_space_path' in json_dict:
+            # arg: q
             self.J_s = Function.load(robots_dir + str(json_dict['Jacobian_space_path']))
         if 'Jacobian_body_path' in json_dict:
+            # arg: q
             self.J_b = Function.load(robots_dir + str(json_dict['Jacobian_body_path']))
             
         if 'mass_matrix_path' in json_dict:
+            # arg: q
             self.M = Function.load(robots_dir + str(json_dict['mass_matrix_path']))
         if 'mass_inverse_matrix_path' in json_dict:
+            # arg: q
             self.Minv = Function.load(robots_dir + str(json_dict['mass_inverse_matrix_path']))
         if 'coriolis_path' in json_dict:
+            # arg: q,qdot
             self.C = Function.load(robots_dir + str(json_dict['coriolis_path']))
         if 'gravity_path' in json_dict:
+            # arg: q
             self.G = Function.load(robots_dir + str(json_dict['gravity_path']))
 
         #####################################################################################
