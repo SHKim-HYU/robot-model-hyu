@@ -29,12 +29,12 @@ pip install .
 | Franka Panda	|     9   	|  	`franka_panda_with_gripper`     |
 | ABB Yumi   	|     18  	|  	`yumi`     |
 | Atlas      	|     32  	|  	`atlas`     |
-| MMO-500	|	9	|	'mmo_500'	|
-| SoftArm	|	11	|	'softarm'	|
-| xArm6	|	6	|	'xarm6'	|
-| M0609	|	6	|	'm0609'	|
-| Indy7	|	6	|	'indy7'	|
-| Indy-RP2	|	7	|	'indy_rp2'	|
+| MMO-500	|	9	|	`mmo_500`	|
+| SoftArm	|	11	|	`softarm`	|
+| xArm6	|	6	|	`xarm6`	|
+| M0609	|	6	|	`m0609`	|
+| Indy7	|	6	|	`indy7`	|
+| Indy-RP2	|	7	|	`indy_rp2`	|
 
 For every robot in the table, this repository includes functions for:
 - Forward dynamics
