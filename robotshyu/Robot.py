@@ -339,6 +339,20 @@ class Robot:
         self.J_fd = Function.load(robots_dir + str(json_dict["Jacobian_forward_dynamics_path"]))
         self.J_id = Function.load(robots_dir + str(json_dict["Jacobian_inverse_dynamics_path"]))
 
+        if 'Jacobian_space_path' in json_dict:
+            self.J_s = Function.load(str(json_dict['Jacobian_space_path']))
+        if 'Jacobian_body_path' in json_dict:
+            self.J_b = Function.load(str(json_dict['Jacobian_body_path']))
+            
+        if 'mass_matrix_path' in json_dict:
+            self.M = Function.load(str(json_dict['mass_matrix_path']))
+        if 'mass_inverse_matrix_path' in json_dict:
+            self.Minv = Function.load(str(json_dict['mass_inverse_matrix_path']))
+        if 'coriolis_path' in json_dict:
+            self.C = Function.load(str(json_dict['coriolis_path']))
+        if 'gravity_path' in json_dict:
+            self.G = Function.load(str(json_dict['gravity_path']))
+
         #####################################################################################
         # rename the jacobians due to casadi's assert of J_fd.name() == jac_+function.name()
         in_J_fd = self.J_fd.sx_in()
