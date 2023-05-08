@@ -20,6 +20,8 @@
     "mass_inverse_matrix_path": "NRMK/indyrp2/indyrp2_Minv.casadi",
     "coriolis_path": "NRMK/indyrp2/indyrp2_C.casadi",
     "gravity_path": "NRMK/indyrp2/indyrp2_G.casadi",
+    "urdf_path": "NRMK/indyrp2/indyrp2_description/indyrp2.urdf",
+    "urdf_frame_path": "NRMK/indyrp2/indyrp2_description/indyrp2_frame.urdf",
     "joints": {
         "joint0": {
             "joint_types": "JointModelRUBZ",

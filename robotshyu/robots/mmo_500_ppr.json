@@ -15,6 +15,8 @@
     "Jacobian_forward_dynamics_path": "MMO_500/mmo500_ppr/mmo500_ppr_J_fd.casadi",
     "Jacobian_inverse_dynamics_path": "MMO_500/mmo500_ppr/mmo500_ppr_J_id.casadi",
     "gravity_path" : "MMO_500/mmo500_ppr/mmo500_ppr_G.casadi",
+    "urdf_path": "MMO_500/mmo500_description/mmo_500_ppr.urdf",
+    "urdf_frame_path": "MMO_500/mmo500_description/mmo_500_ppr_frame.urdf",
     "joints": {
         "lin_x_joint": {
             "joint_types": "JointModelPX",

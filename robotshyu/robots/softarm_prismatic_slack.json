@@ -18,6 +18,8 @@
     "mass_inverse_matrix_path": "softarm/softarm_prismatic_slack_Minv.casadi",
     "coriolis_path": "softarm/softarm_prismatic_slack_C.casadi",
     "gravity_path": "softarm/softarm_prismatic_slack_G.casadi",
+    "urdf_path": "softarm/softarm_description/softarm_prismatic_slack.urdf",
+    "urdf_frame_path": "softarm/softarm_description/softarm_prismatic_slack_frame.urdf",
     "joints": {
         "Joint1": {
             "joint_types": "JointModelRZ",

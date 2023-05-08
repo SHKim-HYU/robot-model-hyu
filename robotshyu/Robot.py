@@ -416,8 +416,11 @@ class Robot:
         #     out_id = [symlin(self.id(*in_id))]
         #     self.id = Function(self.id.name(), in_id, out_id, self.id.name_in(), self.id.name_out())
             
-        # TODO: Add URDF path to json
-        # self.urdf = Function.load(str(json_dict['urdf_path']))
+        # TODO: Add URDF path from json
+        if 'urdf_path' in json_dict:
+            self.urdf_path = robots_dir + str(json_dict["urdf_path"])
+        if 'urdf_frame_path' in json_dict:
+            self.urdf_frame_path = robots_dir + str(json_dict["urdf_frame_path"])
 
         # for distro in json_dict:
         #     print(distro['name'])
