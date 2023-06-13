@@ -308,10 +308,10 @@ class Robot:
                 _all_joint_torque_limit = False
             if ("joint_acc_limit" in json_dict["joints"][x]) and _all_joint_acc_limit:
                 _joints_acc_ub = vertcat(
-                    _joints_vel_ub, float(json_dict["joints"][x]["joint_acc_limit"])
+                    _joints_acc_ub, float(json_dict["joints"][x]["joint_acc_limit"])
                 )
                 _joints_acc_lb = vertcat(
-                    _joints_vel_ub, -float(json_dict["joints"][x]["joint_acc_limit"])
+                    _joints_acc_lb, -float(json_dict["joints"][x]["joint_acc_limit"])
                 )
             else:
                 _all_joint_acc_limit = False
