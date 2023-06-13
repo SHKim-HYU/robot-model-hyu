@@ -20,6 +20,8 @@
     "mass_inverse_matrix_path": "mir250/mir250_ppr_Minv.casadi",
     "coriolis_path": "mir250/mir250_ppr_C.casadi",
     "gravity_path": "mir250/mir250_ppr_G.casadi",
+    "urdf_path": "mir250/description/mir250_ppr.urdf",
+    "urdf_frame_path": "mir250/description/mir250_ppr_frame.urdf",
     "joints": {
         "lin_x_joint": {
             "joint_types": "JointModelPX",
