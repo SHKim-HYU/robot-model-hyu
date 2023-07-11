@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<robot name="coordinate.urdf">
+  <link name="baseLink">
+    <contact>
+    	<friction_anchor/>
+    	   <lateral_friction value="0.05"/>
+    </contact>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+       <mass value=".0001"/>
+       <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 1.5709" xyz="0 0 0"/>
+      <geometry>
+	<mesh filename="human.stl" scale="1 1 1"/>
+      </geometry>
+       <material name="Grey">
+    <color rgba="0.5 0.5 0.5 1.0"/>
+  </material>
+    </visual>
+   
+  </link>
+</robot>

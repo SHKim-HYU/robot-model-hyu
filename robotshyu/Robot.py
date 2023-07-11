@@ -24,6 +24,12 @@ class Robot:
         self.joint_vel_lb = None
         self.joint_acc_ub = None
         self.joint_acc_lb = None
+        self.task_pos_ub = None
+        self.task_pos_lb = None
+        self.task_vel_ub = None
+        self.task_vel_lb = None
+        self.task_acc_ub = None
+        self.task_acc_lb = None
         self.torque_ub = None
         self.torque_lb = None
         self.gravity = vertcat(0, 0, -9.81)
@@ -233,6 +239,62 @@ class Robot:
         self.joint_acc_ub = _ub
         self.joint_acc_lb = _lb
 
+    def set_task_position_limits(self, lb=None, ub=None):
+        if ub == None:
+            _ub = vertcat(inf)
+        elif isinstance(ub, Real):
+            _ub = ub
+        elif isinstance(ub, cs.MX):
+            _ub = ub
+
+
+        if lb == None:
+            _lb = vertcat(-inf)
+        elif isinstance(lb, Real):
+            _lb = lb
+        elif isinstance(lb, cs.MX):
+            _lb = lb
+        
+        self.task_pos_ub = _ub
+        self.task_pos_lb = _lb
+
+    def set_task_velocity_limits(self, lb=None, ub=None):
+        if ub == None:
+            _ub = vertcat(inf)
+        elif isinstance(ub, Real):
+            _ub = ub
+        elif isinstance(ub, cs.MX):
+            _ub = ub
+
+
+        if lb == None:
+            _lb = vertcat(-inf)
+        elif isinstance(lb, Real):
+            _lb = lb
+        elif isinstance(lb, cs.MX):
+            _lb = lb
+        
+        self.task_vel_ub = _ub
+        self.task_vel_lb = _lb
+
+    def set_task_acceleration_limits(self, lb=None, ub=None):
+        if ub == None:
+            _ub = vertcat(inf)
+        elif isinstance(ub, Real):
+            _ub = ub
+        elif isinstance(ub, cs.MX):
+            _ub = ub
+
+
+        if lb == None:
+            _lb = vertcat(-inf)
+        elif isinstance(lb, Real):
+            _lb = lb
+        elif isinstance(lb, cs.MX):
+            _lb = lb
+        
+        self.task_acc_ub = _ub
+        self.task_acc_lb = _lb
 
     def load_from_json(self, analytical_derivatives):
 

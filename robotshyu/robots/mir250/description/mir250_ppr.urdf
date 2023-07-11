@@ -72,7 +72,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0.037646 0 0"/>
       <geometry>
-        <mesh filename="meshes/visual/mir_250_base.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="meshes/visual/mir_250_base.stl" scale="1 1 1"/>
       </geometry>
       <material name="white">
         <color rgba="1 1 1 1"/>

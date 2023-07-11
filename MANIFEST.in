@@ -1,6 +1,7 @@
 # Include the json and casadi files under robots/
 # recursive-include robotsmeco/robots *.json *.casadi
 graft robotshyu/robots
+graft robotshyu/objects
 #global-exclude *.stl *.STL *.dae *.obj *.urdf .gitignore
 global-exclude .gitignore
 

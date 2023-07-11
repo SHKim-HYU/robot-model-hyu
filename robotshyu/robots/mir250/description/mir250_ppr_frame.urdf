@@ -70,7 +70,7 @@
       <inertia ixx="2.0609325089599997" ixy="0.0" ixz="0.0" iyy="4.34999826" iyz="0.0" izz="5.54093111696"/>
     </inertial>
     <visual>
-      <origin rpy="0 0 0" xyz="0.037646 0 0"/>
+      <origin rpy="1.5709 0 0" xyz="0.0 0 0"/>
       <geometry>
         <mesh filename="meshes/untitled.obj" scale = "0.05 0.05 0.05"/>
       </geometry>
