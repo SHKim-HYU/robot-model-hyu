@@ -3,7 +3,7 @@
     "n_dof": "3",
     "n_joints": "4",
     "n_q": "3",
-    "n_frames": "13",
+    "n_frames": "43",
     "gravity": {
         "x": "0",
         "y": "0",
@@ -26,21 +26,21 @@
             "joint_pos_ub": "10000000000000000",
             "joint_pos_lb": "-10000000000000000",
             "joint_torque_limit": "1000",
-            "joint_vel_limit": "1.5"
+            "joint_vel_limit": "3.5"
         },
         "lin_y_joint": {
             "joint_types": "JointModelPY",
             "joint_pos_ub": "10000000000000000",
             "joint_pos_lb": "-10000000000000000",
             "joint_torque_limit": "1000",
-            "joint_vel_limit": "1.5"
+            "joint_vel_limit": "3.5"
         },
         "rot_z_joint": {
             "joint_types": "JointModelRZ",
             "joint_pos_ub": "10000000000000000",
             "joint_pos_lb": "-10000000000000000",
             "joint_torque_limit": "1000",
-            "joint_vel_limit": "0.69999999999999996"
+            "joint_vel_limit": "3.5"
         }
     }
 }
