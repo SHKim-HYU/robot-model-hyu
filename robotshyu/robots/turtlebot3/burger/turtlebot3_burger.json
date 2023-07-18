@@ -1,0 +1,46 @@
+{
+    "name": "turtlebot3_burger",
+    "n_dof": "3",
+    "n_joints": "4",
+    "n_q": "3",
+    "n_frames": "21",
+    "gravity": {
+        "x": "0",
+        "y": "0",
+        "z": "-9.8100000000000005"
+    },
+    "forward_kinematics_path": "turtlebot3_burger_fk.casadi",
+    "forward_dynamics_path": "turtlebot3_burger_fd.casadi",
+    "inverse_dynamics_path": "turtlebot3_burger_id.casadi",
+    "Jacobian_forward_dynamics_path": "turtlebot3_burger_J_fd.casadi",
+    "Jacobian_inverse_dynamics_path": "turtlebot3_burger_J_id.casadi",
+    "Jacobian_space_path": "turtlebot3_burger_J_s.casadi",
+    "Jacobian_body_path": "turtlebot3_burger_J_b.casadi",
+    "mass_matrix_path": "turtlebot3_burger_M.casadi",
+    "mass_inverse_matrix_path": "turtlebot3_burger_Minv.casadi",
+    "coriolis_path": "turtlebot3_burger_C.casadi",
+    "gravity_path": "turtlebot3_burger_G.casadi",
+    "joints": {
+        "lin_x_joint": {
+            "joint_types": "JointModelPX",
+            "joint_pos_ub": "10000000000000000",
+            "joint_pos_lb": "-10000000000000000",
+            "joint_torque_limit": "1000",
+            "joint_vel_limit": "1.5"
+        },
+        "lin_y_joint": {
+            "joint_types": "JointModelPY",
+            "joint_pos_ub": "10000000000000000",
+            "joint_pos_lb": "-10000000000000000",
+            "joint_torque_limit": "1000",
+            "joint_vel_limit": "1.5"
+        },
+        "rot_z_joint": {
+            "joint_types": "JointModelRZ",
+            "joint_pos_ub": "10000000000000000",
+            "joint_pos_lb": "-10000000000000000",
+            "joint_torque_limit": "1000",
+            "joint_vel_limit": "0.69999999999999996"
+        }
+    }
+}
