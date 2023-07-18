@@ -20,6 +20,8 @@
     "mass_inverse_matrix_path": "turtlebot3/burger/turtlebot3_burger_Minv.casadi",
     "coriolis_path": "turtlebot3/burger/turtlebot3_burger_C.casadi",
     "gravity_path": "turtlebot3/burger/turtlebot3_burger_G.casadi",
+    "urdf_path": "turtlebot3/burger/description/burger/turtlebot3_burger.urdf",
+    "urdf_frame_path": "turtlebot3/burger/description/burger/turtlebot3_burger_frame.urdf",
     "joints": {
         "lin_x_joint": {
             "joint_types": "JointModelPX",
