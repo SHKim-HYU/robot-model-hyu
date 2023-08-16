@@ -32,6 +32,8 @@ class Robot:
         self.task_acc_lb = None
         self.task_jerk_ub = None
         self.task_jerk_lb = None
+        self.task_snap_ub = None
+        self.task_snap_lb = None
         self.torque_ub = None
         self.torque_lb = None
         self.gravity = vertcat(0, 0, -9.81)
@@ -331,6 +333,29 @@ class Robot:
         
         self.task_jerk_ub = _ub
         self.task_jerk_lb = _lb
+
+    def set_task_snap_limits(self, lb=None, ub=None):
+        if ub == None:
+            _ub = vertcat(inf)
+        elif isinstance(ub, Real):
+            _ub = ub
+        elif isinstance(ub, cs.MX):
+            _ub = ub
+        else:
+            _ub = ub
+
+
+        if lb == None:
+            _lb = vertcat(-inf)
+        elif isinstance(lb, Real):
+            _lb = lb
+        elif isinstance(lb, cs.MX):
+            _lb = lb
+        else:
+            _lb = lb
+        
+        self.task_snap_ub = _ub
+        self.task_snap_lb = _lb
 
     def load_from_json(self, analytical_derivatives):
 
