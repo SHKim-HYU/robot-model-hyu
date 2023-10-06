@@ -3,7 +3,7 @@
     "n_dof": "7",
     "n_joints": "8",
     "n_q": "14",
-    "n_frames": "21",
+    "n_frames": "19",
     "gravity": {
         "x": "0",
         "y": "0",
