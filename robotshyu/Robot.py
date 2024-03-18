@@ -464,13 +464,22 @@ class Robot:
         self.J_fd = Function.load(robots_dir + str(json_dict["Jacobian_forward_dynamics_path"]))
         self.J_id = Function.load(robots_dir + str(json_dict["Jacobian_inverse_dynamics_path"]))
 
+        if 'center_of_mass_path' in json_dict:
+            # arg: q
+            self.CoM_x = Function.load(robots_dir + str(json_dict['center_of_mass_path']))
         if 'Jacobian_space_path' in json_dict:
             # arg: q
             self.J_s = Function.load(robots_dir + str(json_dict['Jacobian_space_path']))
         if 'Jacobian_body_path' in json_dict:
             # arg: q
             self.J_b = Function.load(robots_dir + str(json_dict['Jacobian_body_path']))
-            
+        if 'Jacobian_derivative_space_path' in json_dict:
+            # arg: q,v
+            self.dJ_s = Function.load(robots_dir + str(json_dict['Jacobian_derivative_space_path']))
+        if 'Jacobian_derivative_body_path' in json_dict:
+            # arg: q,v
+            self.dJ_b = Function.load(robots_dir + str(json_dict['Jacobian_derivative_body_path']))
+                
         if 'mass_matrix_path' in json_dict:
             # arg: q
             self.M = Function.load(robots_dir + str(json_dict['mass_matrix_path']))
