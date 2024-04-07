@@ -1,4 +1,5 @@
 # from numpy import sin, cos, tan
+from os.path import join, dirname, abspath
 from casadi import vertcat, sumsqr, Function
 from math import inf
 from numbers import Real
@@ -45,6 +46,7 @@ class Robot:
         self.parameters = []
 
         self.input_resolution = "acceleration"
+        self.object_dir = join(dirname(dirname(str(abspath(__file__)))), "robotshyu/objects/")
 
     def set_name(self, name):
         """Allows to rename a robot. Useful for multi-robot implementations.
@@ -358,8 +360,6 @@ class Robot:
         self.task_snap_lb = _lb
 
     def load_from_json(self, analytical_derivatives):
-
-        from os.path import join, dirname, abspath
 
         robots_dir = join(dirname(dirname(str(abspath(__file__)))), "robotshyu/robots/")
 

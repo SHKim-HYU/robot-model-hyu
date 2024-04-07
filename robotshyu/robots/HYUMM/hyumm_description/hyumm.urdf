@@ -38,21 +38,66 @@
   </material>
   
   <!-- Mobile HYUM -->
+  <link name="world">
+      <inertial>
+          <mass value="0.000001" />
+          <origin xyz="0.0 0.0 0.0" rpy="0 0 0" />
+          <inertia ixx="0.000001" ixy="0" ixz="0" iyy="0.000001" iyz="0" izz="0.000001" />
+      </inertial>
+  </link>
+  <joint name="lin_x_joint" type="prismatic">
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <axis xyz="1 0 0"/>
+    <limit effort="1000.0" lower="-1e+16" upper="1e+16" velocity="3.5"/>
+    <joint_properties damping="1" friction="1"/>
+    <parent link="world"/>
+    <child link="lin_x_link"/>
+  </joint>
+  <link name="lin_x_link">
+      <inertial>
+          <mass value="0.000001" />
+          <origin xyz="0.0 0.0 0.0" rpy="0 0 0" />
+          <inertia ixx="0.000001" ixy="0" ixz="0" iyy="0.000001" iyz="0" izz="0.000001" />
+      </inertial>
+  </link>
+  <joint name="lin_y_joint" type="prismatic">
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <axis xyz="0 1 0"/>
+    <limit effort="1000.0" lower="-1e+16" upper="1e+16" velocity="3.5"/>
+    <joint_properties damping="1" friction="1"/>
+    <parent link="lin_x_link"/>
+    <child link="lin_y_link"/>
+  </joint>
+  <link name="lin_y_link">
+      <inertial>
+          <mass value="0.000001" />
+          <origin xyz="0.0 0.0 0.0" rpy="0 0 0" />
+          <inertia ixx="0.000001" ixy="0" ixz="0" iyy="0.000001" iyz="0" izz="0.000001" />
+      </inertial>
+  </link>
+  <joint name="rot_z_joint" type="revolute">
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="1000.0" lower="-1e+16" upper="1e+16" velocity="3.5"/>
+    <joint_properties damping="1" friction="1"/>
+    <parent link="lin_y_link"/>
+    <child link="base_link"/>
+  </joint>
   <link
     name="base_link">
     <inertial>
       <origin
-        xyz="-0.02504525 7.75E-06 0.12081284"
+        xyz="-0.02461277 0 0.15106643"
         rpy="0 0 0" />
       <mass
         value="50.03647319" />
       <inertia
-        ixx="2.27000901"
-        ixy="0.01051828"
-        ixz="-0.06308842"
-        iyy="5.11368333"
-        iyz="0.00007413"
-        izz="5.64184989" />
+        ixx="2.67652624"
+        ixy="0.01131569"
+        ixz="-0.083242"
+        iyy="5.55238176"
+        iyz="6.42E-06"
+        izz="5.66864802" />
     </inertial>
     <visual>
       <origin
@@ -82,16 +127,16 @@
     name="wheel_left_front">
     <inertial>
       <origin
-        xyz="1.846E-05 -0.021795 3.217E-05"
+        xyz="-2.623E-05 0.021795 2.623E-05"
         rpy="0 0 0" />
       <mass
         value="0.8" />
       <inertia
         ixx="0.00044643"
-        ixy="-0.00000040"
-        ixz="0.00000000"
-        iyy="0.00009628"
-        iyz="-0.00000052"
+        ixy="-4.1E-07"
+        ixz="0"
+        iyy="9.628E-05"
+        iyz="5E-07"
         izz="0.00044613" />
     </inertial>
     <visual>
@@ -122,19 +167,12 @@
     name="joint_left_front"
     type="fixed">
     <origin
-      xyz="0.41 -0.269 0.05"
+      xyz="0.41 -0.269 0.08"
       rpy="0 0 0" />
     <parent
       link="base_link" />
     <child
       link="wheel_left_front" />
-    <axis
-      xyz="0 -1 0" />
-    <limit
-      lower="0"
-      upper="0"
-      effort="0"
-      velocity="0" />
   </joint>
   <link
     name="wheel_left_back">
@@ -145,12 +183,12 @@
       <mass
         value="0.8" />
       <inertia
-        ixx="0.00044642"
-        ixy="-0.00000050"
-        ixz="0.00000005"
-        iyy="0.00009628"
-        iyz="-0.00000042"
-        izz="0.00044614" />
+        ixx="0.00044643"
+        ixy="-4.1E-07"
+        ixz="0"
+        iyy="9.628E-05"
+        iyz="5E-07"
+        izz="0.00044613" />
     </inertial>
     <visual>
       <origin
@@ -180,35 +218,28 @@
     name="joint_left_back"
     type="fixed">
     <origin
-      xyz="-0.41 -0.269 0.05"
+      xyz="-0.41 -0.269 0.08"
       rpy="0 0 0" />
     <parent
       link="base_link" />
     <child
       link="wheel_left_back" />
-    <axis
-      xyz="0 -1 0" />
-    <limit
-      lower="0"
-      upper="0"
-      effort="0"
-      velocity="0" />
   </joint>
   <link
     name="wheel_right_front">
     <inertial>
       <origin
-        xyz="3.633E-05 0.021795 -7.48E-06"
+        xyz="-2.623E-05 -0.021795 -2.623E-05"
         rpy="0 0 0" />
       <mass
         value="0.8" />
       <inertia
-        ixx="0.00044626"
-        ixy="-0.00000011"
-        ixz="0.00000015"
-        iyy="0.00009628"
-        iyz=" -0.00000064"
-        izz="0.00044631" />
+        ixx="0.00044643"
+        ixy="4.1E-07"
+        ixz="0"
+        iyy="9.628E-05"
+        iyz="5E-07"
+        izz="0.00044613" />
     </inertial>
     <visual>
       <origin
@@ -238,35 +269,28 @@
     name="joint_right_front"
     type="fixed">
     <origin
-      xyz="0.41 0.269 0.05"
+      xyz="0.41 0.269 0.08"
       rpy="0 0 0" />
     <parent
       link="base_link" />
     <child
       link="wheel_right_front" />
-    <axis
-      xyz="0 -1 0" />
-    <limit
-      lower="0"
-      upper="0"
-      effort="0"
-      velocity="0" />
   </joint>
   <link
     name="wheel_right_back">
     <inertial>
       <origin
-        xyz="3.605E-05 0.0217951 -8.72E-06"
+        xyz="-2.623E-05 -0.021795 -2.623E-05"
         rpy="0 0 0" />
       <mass
         value="0.8" />
       <inertia
-        ixx="0.00044631"
-        ixy="-0.00000064"
-        ixz="-0.00000015"
-        iyy="0.00009628"
-        iyz="0.00000013"
-        izz="0.00044625" />
+        ixx="0.00044643"
+        ixy="4.1E-07"
+        ixz="0"
+        iyy="9.628E-05"
+        iyz="5E-07"
+        izz="0.00044613" />
     </inertial>
     <visual>
       <origin
@@ -296,19 +320,12 @@
     name="joint_right_back"
     type="fixed">
     <origin
-      xyz="-0.41 0.269 0.05"
+      xyz="-0.41 0.269 0.08"
       rpy="0 0 0" />
     <parent
       link="base_link" />
     <child
       link="wheel_right_back" />
-    <axis
-      xyz="0 -1 0" />
-    <limit
-      lower="0"
-      upper="0"
-      effort="0"
-      velocity="0" />
   </joint>
   <!-- Manipulator Indy7 -->
     <link name="link0">
@@ -427,7 +444,7 @@
   <joint name="base_flange" type="fixed">
     <parent link="base_link"/>
     <child link="link0"/>
-    <origin xyz="0.3 0 0.198" rpy="0 0 0"/>
+    <origin xyz="0.3 0 0.228" rpy="0 0 0"/>
   </joint>
   <joint name="joint0" type="revolute">
     <parent link="link0"/>
