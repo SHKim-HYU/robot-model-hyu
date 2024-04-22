@@ -467,6 +467,9 @@ class Robot:
         if 'center_of_mass_path' in json_dict:
             # arg: q
             self.CoM_x = Function.load(robots_dir + str(json_dict['center_of_mass_path']))
+        if 'jacobian_center_of_mass_path' in json_dict:
+            # arg: q
+            self.J_com = Function.load(robots_dir + str(json_dict['jacobian_center_of_mass_path']))
         if 'Jacobian_space_path' in json_dict:
             # arg: q
             self.J_s = Function.load(robots_dir + str(json_dict['Jacobian_space_path']))
