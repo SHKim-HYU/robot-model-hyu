@@ -1,0 +1,120 @@
+{
+    "name": "satellite_with_arm",
+    "n_dof": "13",
+    "n_joints": "14",
+    "n_q": "13",
+    "n_frames": "33",
+    "gravity": {
+        "x": "0",
+        "y": "0",
+        "z": "-9.8100000000000005"
+    },
+    "forward_kinematics_path": "test/chaser_test/chaser_fk.casadi",
+    "forward_dynamics_path": "test/chaser_test/chaser_fd.casadi",
+    "center_of_mass_path": "test/chaser_test/chaser_CoM_x.casadi",
+    "inverse_dynamics_path": "test/chaser_test/chaser_id.casadi",
+    "Jacobian_forward_dynamics_path": "test/chaser_test/chaser_J_fd.casadi",
+    "Jacobian_inverse_dynamics_path": "test/chaser_test/chaser_J_id.casadi",
+    "Jacobian_space_path": "test/chaser_test/chaser_J_s.casadi",
+    "Jacobian_body_path": "test/chaser_test/chaser_J_b.casadi",
+    "Jacobian_derivative_space_path": "test/chaser_test/chaser_dJ_s.casadi",
+    "Jacobian_derivative_body_path": "test/chaser_test/chaser_dJ_b.casadi",
+    "mass_matrix_path": "test/chaser_test/chaser_M.casadi",
+    "mass_inverse_matrix_path": "test/chaser_test/chaser_Minv.casadi",
+    "coriolis_path": "test/chaser_test/chaser_C.casadi",
+    "gravity_path": "test/chaser_test/chaser_G.casadi",
+    "urdf_path": "test/chaser_test/chaser_description/chaser.urdf",
+    "joints": {
+        "VirtualJoint_p1": {
+            "joint_types": "JointModelPX",
+            "joint_pos_ub": "1000",
+            "joint_pos_lb": "-1000",
+            "joint_torque_limit": "100",
+            "joint_vel_limit": "1000"
+        },
+        "VirtualJoint_p2": {
+            "joint_types": "JointModelPY",
+            "joint_pos_ub": "1000",
+            "joint_pos_lb": "-1000",
+            "joint_torque_limit": "100",
+            "joint_vel_limit": "1000"
+        },
+        "VirtualJoint_p3": {
+            "joint_types": "JointModelPZ",
+            "joint_pos_ub": "1000",
+            "joint_pos_lb": "-1000",
+            "joint_torque_limit": "100",
+            "joint_vel_limit": "1000"
+        },
+        "VirtualJoint_r1": {
+            "joint_types": "JointModelRX",
+            "joint_pos_ub": "1000",
+            "joint_pos_lb": "-1000",
+            "joint_torque_limit": "100",
+            "joint_vel_limit": "1000"
+        },
+        "VirtualJoint_r2": {
+            "joint_types": "JointModelRY",
+            "joint_pos_ub": "1000",
+            "joint_pos_lb": "-1000",
+            "joint_torque_limit": "100",
+            "joint_vel_limit": "1000"
+        },
+        "VirtualJoint_r3": {
+            "joint_types": "JointModelRZ",
+            "joint_pos_ub": "1000",
+            "joint_pos_lb": "-1000",
+            "joint_torque_limit": "100",
+            "joint_vel_limit": "1000"
+        },
+        "Joint1": {
+            "joint_types": "JointModelRZ",
+            "joint_pos_ub": "6.2800000000000002",
+            "joint_pos_lb": "-6.2800000000000002",
+            "joint_torque_limit": "100",
+            "joint_vel_limit": "20"
+        },
+        "Joint2": {
+            "joint_types": "JointModelRevoluteUnaligned",
+            "joint_pos_ub": "6.2800000000000002",
+            "joint_pos_lb": "-6.2800000000000002",
+            "joint_torque_limit": "100",
+            "joint_vel_limit": "20"
+        },
+        "Joint3": {
+            "joint_types": "JointModelRZ",
+            "joint_pos_ub": "6.2800000000000002",
+            "joint_pos_lb": "-6.2800000000000002",
+            "joint_torque_limit": "100",
+            "joint_vel_limit": "20"
+        },
+        "Joint4": {
+            "joint_types": "JointModelRX",
+            "joint_pos_ub": "6.2800000000000002",
+            "joint_pos_lb": "-6.2800000000000002",
+            "joint_torque_limit": "100",
+            "joint_vel_limit": "20"
+        },
+        "Joint5": {
+            "joint_types": "JointModelRevoluteUnaligned",
+            "joint_pos_ub": "6.2800000000000002",
+            "joint_pos_lb": "-6.2800000000000002",
+            "joint_torque_limit": "100",
+            "joint_vel_limit": "20"
+        },
+        "Joint6": {
+            "joint_types": "JointModelRX",
+            "joint_pos_ub": "6.2800000000000002",
+            "joint_pos_lb": "-6.2800000000000002",
+            "joint_torque_limit": "100",
+            "joint_vel_limit": "20"
+        },
+        "Joint7": {
+            "joint_types": "JointModelRZ",
+            "joint_pos_ub": "6.2800000000000002",
+            "joint_pos_lb": "-6.2800000000000002",
+            "joint_torque_limit": "100",
+            "joint_vel_limit": "20"
+        }
+    }
+}
