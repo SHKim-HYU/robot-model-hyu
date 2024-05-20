@@ -460,6 +460,8 @@ class Robot:
         self.id = Function.load(robots_dir + str(json_dict["inverse_dynamics_path"]))
         # arg: q
         self.fk = Function.load(robots_dir + str(json_dict["forward_kinematics_path"]))
+        self.fk_ee = Function.load(robots_dir + str(json_dict["forward_kinematics_ee_path"]))
+        self.fk_base = Function.load(robots_dir + str(json_dict["forward_kinematics_base_path"]))
 
         self.J_fd = Function.load(robots_dir + str(json_dict["Jacobian_forward_dynamics_path"]))
         self.J_id = Function.load(robots_dir + str(json_dict["Jacobian_inverse_dynamics_path"]))

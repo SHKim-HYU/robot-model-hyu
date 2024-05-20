@@ -10,6 +10,8 @@
         "z": "-9.8100000000000005"
     },
     "forward_kinematics_path": "HYUMM/hyumm_fk.casadi",
+    "forward_kinematics_ee_path": "HYUMM/hyumm_fk_ee.casadi",
+    "forward_kinematics_base_path": "HYUMM/hyumm_fk_base.casadi",
     "forward_dynamics_path": "HYUMM/hyumm_fd.casadi",
     "center_of_mass_path": "HYUMM/hyumm_CoM_x.casadi",
     "jacobian_center_of_mass_path": "HYUMM/hyumm_J_com.casadi",
