@@ -461,8 +461,10 @@ class Robot:
         # arg: q
         self.fk = Function.load(robots_dir + str(json_dict["forward_kinematics_path"]))
 
-        self.J_fd = Function.load(robots_dir + str(json_dict["Jacobian_forward_dynamics_path"]))
-        self.J_id = Function.load(robots_dir + str(json_dict["Jacobian_inverse_dynamics_path"]))
+        if 'Jacobian_forward_dynamics_path' in json_dict:
+            self.J_fd = Function.load(robots_dir + str(json_dict["Jacobian_forward_dynamics_path"]))
+        if 'Jacobian_inverse_dynamics_path' in json_dict:
+            self.J_id = Function.load(robots_dir + str(json_dict["Jacobian_inverse_dynamics_path"]))
         
         if 'forward_kinematics_ee_path' in json_dict:
             # arg: q
@@ -504,17 +506,18 @@ class Robot:
 
         #####################################################################################
         # rename the jacobians due to casadi's assert of J_fd.name() == jac_+function.name()
-        in_J_fd = self.J_fd.sx_in()
-        out_J_fd = [
-            self.J_fd(self.J_fd.sx_in(0), self.J_fd.sx_in(1), self.J_fd.sx_in(2))
-        ]
-        self.J_fd = Function("jac_fd", in_J_fd, out_J_fd, ["q", "q_dot", "tau"], ["jac_fd"])
-
-        in_J_id = self.J_id.sx_in()
-        out_J_id = [
-            self.J_id(self.J_id.sx_in(0), self.J_id.sx_in(1), self.J_id.sx_in(2))
-        ]
-        self.J_id = Function("jac_id", in_J_id, out_J_id, ["q", "q_dot", "q_ddot"], ["jac_id"])
+        if 'Jacobian_forward_dynamics_path' in json_dict:
+            in_J_fd = self.J_fd.sx_in()
+            out_J_fd = [
+                self.J_fd(self.J_fd.sx_in(0), self.J_fd.sx_in(1), self.J_fd.sx_in(2))
+            ]
+            self.J_fd = Function("jac_fd", in_J_fd, out_J_fd, ["q", "q_dot", "tau"], ["jac_fd"])
+        if 'Jacobian_inverse_dynamics_path' in json_dict:
+            in_J_id = self.J_id.sx_in()
+            out_J_id = [
+                self.J_id(self.J_id.sx_in(0), self.J_id.sx_in(1), self.J_id.sx_in(2))
+            ]
+            self.J_id = Function("jac_id", in_J_id, out_J_id, ["q", "q_dot", "q_ddot"], ["jac_id"])
         ####################################################################################
 
         if analytical_derivatives:
