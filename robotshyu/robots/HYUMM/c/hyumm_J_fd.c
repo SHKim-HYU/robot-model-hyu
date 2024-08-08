@@ -76,12 +76,12 @@ static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw,
   if (res[0]!=0) res[0][15]=a0;
   if (res[0]!=0) res[0][16]=a0;
   if (res[0]!=0) res[0][17]=a0;
-  a0=7.9617499299999992e+01;
+  a0=7.9918390189999997e+01;
   a1=arg[2]? arg[2][1] : 0;
   a2=arg[0]? arg[0][2] : 0;
   a3=sin(a2);
   a4=arg[1]? arg[1][2] : 0;
-  a5=5.4906781039999991e+01;
+  a5=5.5207671930000004e+01;
   a2=cos(a2);
   a6=arg[1]? arg[1][0] : 0;
   a7=(a2*a6);
@@ -97,9 +97,9 @@ static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw,
   a11=arg[0]? arg[0][1] : 0;
   a12=(a11*a4);
   a12=(a9+a12);
-  a13=-1.3264728599710042e-02;
+  a13=-1.3325055224028888e-02;
   a14=(a13*a3);
-  a15=-6.3517912743247260e-04;
+  a15=-6.5955889565800042e-08;
   a16=(a15*a2);
   a14=(a14+a16);
   a14=(a11+a14);
@@ -3636,7 +3636,7 @@ static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw,
   a331=(a344*a23);
   a42=(a42-a331);
   a42=(a5+a42);
-  a331=3.4875641271113027e-02;
+  a331=3.6412711129999991e-06;
   a56=(a23*a56);
   a382=(a24*a382);
   a56=(a56+a382);
@@ -3648,7 +3648,7 @@ static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw,
   a382=(a382-a317);
   a317=(a31*a382);
   a331=(a331+a317);
-  a317=6.6125522525000768e+00;
+  a317=6.6370700827912463e+00;
   a56=(a56*a23);
   a390=(a390*a24);
   a56=(a56+a390);
@@ -3663,7 +3663,7 @@ static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw,
   a306=(a306*a23);
   a344=(a344*a24);
   a306=(a306+a344);
-  a344=-7.2832354877930494e-01;
+  a344=-7.3564527725731954e-01;
   a344=(a344+a390);
   a390=(a294*a344);
   a306=(a306-a390);
@@ -4513,9 +4513,9 @@ static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw,
   a350=(a350+a291);
   a397=(a350*a6);
   a157=(a157-a397);
-  a397=6.8963207238034918e-01;
+  a397=6.9080060044687952e-01;
   a398=(a397*a13);
-  a399=3.1036792761965087e-01;
+  a399=3.0919939955312054e-01;
   a400=4.6313689588398066e-01;
   a401=(a400*a37);
   a402=5.3686310411601923e-01;
