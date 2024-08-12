@@ -2,7 +2,7 @@
 <!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
      Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
      For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
-<robot name="hyumm">
+<robot name="hyumm_offset_l">
   <material name="black">
     <color rgba="0.0 0.0 0.0 1.0"/>
   </material>
@@ -81,7 +81,19 @@
     <limit effort="1000.0" lower="-1e+16" upper="1e+16" velocity="3.5"/>
     <joint_properties damping="1" friction="1"/>
     <parent link="lin_y_link"/>
+    <child link="base_center"/>
+  </joint>
+  <link name="base_center">
+      <inertial>
+          <mass value="0" />
+          <origin xyz="0.0 0.0 0.0" rpy="0 0 0" />
+          <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0" />
+      </inertial>
+  </link>
+  <joint name="base_joint" type="fixed">
+    <parent link="base_center"/>
     <child link="base_link"/>
+    <origin rpy="0 0 0" xyz="0 0.4 0.0"/>
   </joint>
   <link
     name="base_link">

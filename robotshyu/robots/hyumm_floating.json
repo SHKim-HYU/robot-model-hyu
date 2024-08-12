@@ -1,0 +1,82 @@
+{
+    "name": "hyumm_floating",
+    "n_dof": "12",
+    "n_joints": "8",
+    "n_q": "13",
+    "n_frames": "21",
+    "gravity": {
+        "x": "0",
+        "y": "0",
+        "z": "-9.8100000000000005"
+    },
+    "forward_kinematics_path": "HYUMM/hyumm_floating_fk.casadi",
+    "forward_kinematics_ee_path": "HYUMM/hyumm_floating_fk_ee.casadi",
+    "forward_kinematics_base_path": "HYUMM/hyumm_floating_fk_base.casadi",
+    "forward_dynamics_path": "HYUMM/hyumm_floating_fd.casadi",
+    "center_of_mass_path": "HYUMM/hyumm_floating_CoM_x.casadi",
+    "jacobian_center_of_mass_path": "HYUMM/hyumm_floating_J_com.casadi",
+    "inverse_dynamics_path": "HYUMM/hyumm_floating_id.casadi",
+    "Jacobian_forward_dynamics_path": "HYUMM/hyumm_floating_J_fd.casadi",
+    "Jacobian_inverse_dynamics_path": "HYUMM/hyumm_floating_J_id.casadi",
+    "Jacobian_space_path": "HYUMM/hyumm_floating_J_s.casadi",
+    "Jacobian_body_path": "HYUMM/hyumm_floating_J_b.casadi",
+    "Jacobian_derivative_space_path": "HYUMM/hyumm_floating_dJ_s.casadi",
+    "Jacobian_derivative_body_path": "HYUMM/hyumm_floating_dJ_b.casadi",
+    "mass_matrix_path": "HYUMM/hyumm_floating_M.casadi",
+    "mass_inverse_matrix_path": "HYUMM/hyumm_floating_Minv.casadi",
+    "coriolis_path": "HYUMM/hyumm_floating_C.casadi",
+    "gravity_path": "HYUMM/hyumm_floating_G.casadi",
+    "urdf_path": "HYUMM/hyumm_description/hyumm_floating.urdf",
+    "urdf_frame_path": "HYUMM/hyumm_description/hyumm_floating_frame.urdf",
+    "joints": {
+        "root_joint": {
+            "joint_types": "JointModelFreeFlyer",
+            "joint_pos_ub": "1.7976931348623157e+308",
+            "joint_pos_lb": "-1.7976931348623157e+308",
+            "joint_torque_limit": "1.7976931348623157e+308",
+            "joint_vel_limit": "1.7976931348623157e+308"
+        },
+        "joint0": {
+            "joint_types": "JointModelRZ",
+            "joint_pos_ub": "1.7976931348623157e+308",
+            "joint_pos_lb": "-1.7976931348623157e+308",
+            "joint_torque_limit": "1.7976931348623157e+308",
+            "joint_vel_limit": "1.7976931348623157e+308"
+        },
+        "joint1": {
+            "joint_types": "JointModelRZ",
+            "joint_pos_ub": "1.7976931348623157e+308",
+            "joint_pos_lb": "-1.7976931348623157e+308",
+            "joint_torque_limit": "1.7976931348623157e+308",
+            "joint_vel_limit": "1.7976931348623157e+308"
+        },
+        "joint2": {
+            "joint_types": "JointModelRZ",
+            "joint_pos_ub": "1.7976931348623157e+308",
+            "joint_pos_lb": "-1.7976931348623157e+308",
+            "joint_torque_limit": "1.7976931348623157e+308",
+            "joint_vel_limit": "1.7976931348623157e+308"
+        },
+        "joint3": {
+            "joint_types": "JointModelRZ",
+            "joint_pos_ub": "1.7976931348623157e+308",
+            "joint_pos_lb": "-1.7976931348623157e+308",
+            "joint_torque_limit": "1.7976931348623157e+308",
+            "joint_vel_limit": "1.7976931348623157e+308"
+        },
+        "joint4": {
+            "joint_types": "JointModelRZ",
+            "joint_pos_ub": "1.7976931348623157e+308",
+            "joint_pos_lb": "-1.7976931348623157e+308",
+            "joint_torque_limit": "1.7976931348623157e+308",
+            "joint_vel_limit": "1.7976931348623157e+308"
+        },
+        "joint5": {
+            "joint_types": "JointModelRZ",
+            "joint_pos_ub": "1.7976931348623157e+308",
+            "joint_pos_lb": "-1.7976931348623157e+308",
+            "joint_torque_limit": "10",
+            "joint_vel_limit": "1"
+        }
+    }
+}
