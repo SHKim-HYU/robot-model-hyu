@@ -23,7 +23,7 @@ setuptools.setup(
     packages=setuptools.find_packages(),
     include_package_data=True,
     install_requires=[
-        'casadi>=3.4,<4.0',
+        # 'casadi>=3.4,<4.0',
     ],
     classifiers=[
         "Development Status :: 1 - Planning",
