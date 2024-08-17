@@ -1,0 +1,36 @@
+{
+    "name": "hyumob_floating",
+    "n_dof": "6",
+    "n_joints": "2",
+    "n_q": "7",
+    "n_frames": "5",
+    "gravity": {
+        "x": "0",
+        "y": "0",
+        "z": "-9.8100000000000005"
+    },
+    "forward_kinematics_path": "HYUMOB/hyumob_floating_fk.casadi",
+    "forward_dynamics_path": "HYUMOB/hyumob_floating_fd.casadi",
+    "inverse_dynamics_path": "HYUMOB/hyumob_floating_id.casadi",
+    "center_of_mass_path": "HYUMOB/hyumob_floating_CoM_x.casadi",
+    "jacobian_center_of_mass_path": "HYUMOB/hyumob_floating_J_com.casadi",
+    "Jacobian_forward_dynamics_path": "HYUMOB/hyumob_floating_J_fd.casadi",
+    "Jacobian_inverse_dynamics_path": "HYUMOB/hyumob_floating_J_id.casadi",
+    "Jacobian_space_path": "HYUMOB/hyumob_floating_J_s.casadi",
+    "Jacobian_body_path": "HYUMOB/hyumob_floating_J_b.casadi",
+    "Jacobian_derivative_space_path": "HYUMOB/hyumob_floating_dJ_s.casadi",
+    "Jacobian_derivative_body_path": "HYUMOB/hyumob_floating_dJ_b.casadi",
+    "mass_matrix_path": "HYUMOB/hyumob_floating_M.casadi",
+    "mass_inverse_matrix_path": "HYUMOB/hyumob_floating_Minv.casadi",
+    "coriolis_path": "HYUMOB/hyumob_floating_C.casadi",
+    "gravity_path": "HYUMOB/hyumob_floating_G.casadi",
+    "joints": {
+        "root_joint": {
+            "joint_types": "JointModelFreeFlyer",
+            "joint_pos_ub": "1.7976931348623157e+308",
+            "joint_pos_lb": "-1.7976931348623157e+308",
+            "joint_torque_limit": "1.7976931348623157e+308",
+            "joint_vel_limit": "1.7976931348623157e+308"
+        }
+    }
+}
