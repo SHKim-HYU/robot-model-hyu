@@ -1,0 +1,41 @@
+digraph G {
+node [shape=box];
+"base_link" [label="base_link"];
+"link0" [label="link0"];
+"link1" [label="link1"];
+"link2" [label="link2"];
+"link3" [label="link3"];
+"link4" [label="link4"];
+"link5" [label="link5"];
+"link6" [label="link6"];
+"tcp" [label="tcp"];
+"wheel_left_back" [label="wheel_left_back"];
+"wheel_left_front" [label="wheel_left_front"];
+"wheel_right_back" [label="wheel_right_back"];
+"wheel_right_front" [label="wheel_right_front"];
+node [shape=ellipse, color=blue, fontcolor=blue];
+"base_link" -> "base_flange" [label="xyz: 0.3 0 0.198 \nrpy: 0 -0 0"]
+"base_flange" -> "link0"
+"link0" -> "joint0" [label="xyz: 0 0 0.0775 \nrpy: 0 -0 0"]
+"joint0" -> "link1"
+"link1" -> "joint1" [label="xyz: 0 -0.109 0.222 \nrpy: 0 1.5708 -1.5708"]
+"joint1" -> "link2"
+"link2" -> "joint2" [label="xyz: -0.45 0 -0.0305 \nrpy: 0 -0 0"]
+"joint2" -> "link3"
+"link3" -> "joint3" [label="xyz: -0.267 0 -0.075 \nrpy: -1.5708 -0 1.5708"]
+"joint3" -> "link4"
+"link4" -> "joint4" [label="xyz: 0 -0.114 0.083 \nrpy: 0 1.5708 -1.5708"]
+"joint4" -> "link5"
+"link5" -> "joint5" [label="xyz: -0.168 0 0.069 \nrpy: -1.5708 -0 1.5708"]
+"joint5" -> "link6"
+"link6" -> "indy7_tcp" [label="xyz: 0 0 0.06 \nrpy: 0 -0 0"]
+"indy7_tcp" -> "tcp"
+"base_link" -> "joint_left_back" [label="xyz: -0.41 -0.269 0.05 \nrpy: 0 -0 0"]
+"joint_left_back" -> "wheel_left_back"
+"base_link" -> "joint_left_front" [label="xyz: 0.41 -0.269 0.05 \nrpy: 0 -0 0"]
+"joint_left_front" -> "wheel_left_front"
+"base_link" -> "joint_right_back" [label="xyz: -0.41 0.269 0.05 \nrpy: 0 -0 0"]
+"joint_right_back" -> "wheel_right_back"
+"base_link" -> "joint_right_front" [label="xyz: 0.41 0.269 0.05 \nrpy: 0 -0 0"]
+"joint_right_front" -> "wheel_right_front"
+}
