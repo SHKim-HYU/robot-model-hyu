@@ -18,6 +18,7 @@
     "mass_inverse_matrix_path": "HYUMOB/hyumob_Minv.casadi",
     "coriolis_path": "HYUMOB/hyumob_C.casadi",
     "gravity_path": "HYUMOB/hyumob_G.casadi",
+    "urdf_path": "HYUMOB/hyumob_description/hyumob.urdf",
     "joints": {
         "lin_x_joint": {
             "joint_types": "JointModelPX",

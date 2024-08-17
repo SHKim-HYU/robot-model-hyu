@@ -24,6 +24,7 @@
     "mass_inverse_matrix_path": "HYUMOB/hyumob_floating_Minv.casadi",
     "coriolis_path": "HYUMOB/hyumob_floating_C.casadi",
     "gravity_path": "HYUMOB/hyumob_floating_G.casadi",
+    "urdf_path": "HYUMOB/hyumob_description/hyumob_floating.urdf",
     "joints": {
         "root_joint": {
             "joint_types": "JointModelFreeFlyer",
