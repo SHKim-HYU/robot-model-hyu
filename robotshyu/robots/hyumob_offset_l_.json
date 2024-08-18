@@ -1,0 +1,51 @@
+{
+    "name": "hyumob_offset_l",
+    "n_dof": "3",
+    "n_joints": "4",
+    "n_q": "3",
+    "n_frames": "11",
+    "gravity": {
+        "x": "0",
+        "y": "0",
+        "z": "-9.8100000000000005"
+    },
+    "forward_kinematics_path": "HYUMOB/hyumob_offset_l_fk.casadi",
+    "forward_dynamics_path": "HYUMOB/hyumob_offset_l_fd.casadi",
+    "inverse_dynamics_path": "HYUMOB/hyumob_offset_l_id.casadi",
+    "center_of_mass_path": "HYUMOB/hyumob_offset_l_CoM_x.casadi",
+    "jacobian_center_of_mass_path": "HYUMOB/hyumob_offset_l_J_com.casadi",
+    "Jacobian_forward_dynamics_path": "HYUMOB/hyumob_offset_l_J_fd.casadi",
+    "Jacobian_inverse_dynamics_path": "HYUMOB/hyumob_offset_l_J_id.casadi",
+    "Jacobian_space_path": "HYUMOB/hyumob_offset_l_J_s.casadi",
+    "Jacobian_body_path": "HYUMOB/hyumob_offset_l_J_b.casadi",
+    "Jacobian_derivative_space_path": "HYUMOB/hyumob_offset_l_dJ_s.casadi",
+    "Jacobian_derivative_body_path": "HYUMOB/hyumob_offset_l_dJ_b.casadi",
+    "mass_matrix_path": "HYUMOB/hyumob_offset_l_M.casadi",
+    "mass_inverse_matrix_path": "HYUMOB/hyumob_offset_l_Minv.casadi",
+    "coriolis_path": "HYUMOB/hyumob_offset_l_C.casadi",
+    "gravity_path": "HYUMOB/hyumob_offset_l_G.casadi",
+    "urdf_path": "HYUMOB/hyumob_description/hyumob_offset_l.urdf",
+    "joints": {
+        "lin_x_joint": {
+            "joint_types": "JointModelPX",
+            "joint_pos_ub": "10000000000000000",
+            "joint_pos_lb": "-10000000000000000",
+            "joint_torque_limit": "1000",
+            "joint_vel_limit": "3.5"
+        },
+        "lin_y_joint": {
+            "joint_types": "JointModelPY",
+            "joint_pos_ub": "10000000000000000",
+            "joint_pos_lb": "-10000000000000000",
+            "joint_torque_limit": "1000",
+            "joint_vel_limit": "3.5"
+        },
+        "rot_z_joint": {
+            "joint_types": "JointModelRZ",
+            "joint_pos_ub": "10000000000000000",
+            "joint_pos_lb": "-10000000000000000",
+            "joint_torque_limit": "1000",
+            "joint_vel_limit": "3.5"
+        }
+    }
+}
