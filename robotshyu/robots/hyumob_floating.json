@@ -12,6 +12,7 @@
     "forward_kinematics_path": "HYUMOB/hyumob_floating_fk.casadi",
     "forward_dynamics_path": "HYUMOB/hyumob_floating_fd.casadi",
     "inverse_dynamics_path": "HYUMOB/hyumob_floating_id.casadi",
+    "center_of_mass_path": "HYUMOB/hyumob_floating_CoM_x.casadi",
     "Jacobian_space_path": "HYUMOB/hyumob_floating_J_s.casadi",
     "Jacobian_body_path": "HYUMOB/hyumob_floating_J_b.casadi",
     "mass_matrix_path": "HYUMOB/hyumob_floating_M.casadi",
