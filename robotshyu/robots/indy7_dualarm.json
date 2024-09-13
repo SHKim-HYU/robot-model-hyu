@@ -1,0 +1,108 @@
+{
+    "name": "indy7_dualarm",
+    "n_dof": "12",
+    "n_joints": "13",
+    "n_q": "12",
+    "n_frames": "35",
+    "gravity": {
+        "x": "0",
+        "y": "0",
+        "z": "-9.8100000000000005"
+    },
+    "forward_kinematics_path": "NRMK/indy7_dualarm/indy7_dualarm_fk.casadi",
+    "forward_dynamics_path": "NRMK/indy7_dualarm/indy7_dualarm_fd.casadi",
+    "inverse_dynamics_path": "NRMK/indy7_dualarm/indy7_dualarm_id.casadi",
+    "Jacobian_space_path": "NRMK/indy7_dualarm/indy7_dualarm_J_s_l.casadi",
+    "Jacobian_body_path": "NRMK/indy7_dualarm/indy7_dualarm_J_b_l.casadi",
+    "mass_matrix_path": "NRMK/indy7_dualarm/indy7_dualarm_M.casadi",
+    "mass_inverse_matrix_path": "NRMK/indy7_dualarm/indy7_dualarm_Minv.casadi",
+    "coriolis_path": "NRMK/indy7_dualarm/indy7_dualarm_C.casadi",
+    "gravity_path": "NRMK/indy7_dualarm/indy7_dualarm_G.casadi",
+    "urdf_path": "NRMK/indy7_dualarm/indy7_dualarm_description/indy7_dualarm.urdf",
+    "joints": {
+        "joint0_l": {
+            "joint_types": "JointModelRZ",
+            "joint_pos_ub": "3.0543261909900763",
+            "joint_pos_lb": "-3.0543261909900763",
+            "joint_torque_limit": "10",
+            "joint_vel_limit": "1"
+        },
+        "joint1_l": {
+            "joint_types": "JointModelRZ",
+            "joint_pos_ub": "3.0543261909900763",
+            "joint_pos_lb": "-3.0543261909900763",
+            "joint_torque_limit": "10",
+            "joint_vel_limit": "1"
+        },
+        "joint2_l": {
+            "joint_types": "JointModelRZ",
+            "joint_pos_ub": "3.0543261909900763",
+            "joint_pos_lb": "-3.0543261909900763",
+            "joint_torque_limit": "10",
+            "joint_vel_limit": "1"
+        },
+        "joint3_l": {
+            "joint_types": "JointModelRZ",
+            "joint_pos_ub": "3.0543261909900763",
+            "joint_pos_lb": "-3.0543261909900763",
+            "joint_torque_limit": "10",
+            "joint_vel_limit": "1"
+        },
+        "joint4_l": {
+            "joint_types": "JointModelRZ",
+            "joint_pos_ub": "3.0543261909900763",
+            "joint_pos_lb": "-3.0543261909900763",
+            "joint_torque_limit": "10",
+            "joint_vel_limit": "1"
+        },
+        "joint5_l": {
+            "joint_types": "JointModelRZ",
+            "joint_pos_ub": "3.7524578917878082",
+            "joint_pos_lb": "-3.7524578917878082",
+            "joint_torque_limit": "10",
+            "joint_vel_limit": "1"
+        },
+        "joint0_r": {
+            "joint_types": "JointModelRZ",
+            "joint_pos_ub": "3.0543261909900763",
+            "joint_pos_lb": "-3.0543261909900763",
+            "joint_torque_limit": "10",
+            "joint_vel_limit": "1"
+        },
+        "joint1_r": {
+            "joint_types": "JointModelRZ",
+            "joint_pos_ub": "3.0543261909900763",
+            "joint_pos_lb": "-3.0543261909900763",
+            "joint_torque_limit": "10",
+            "joint_vel_limit": "1"
+        },
+        "joint2_r": {
+            "joint_types": "JointModelRZ",
+            "joint_pos_ub": "3.0543261909900763",
+            "joint_pos_lb": "-3.0543261909900763",
+            "joint_torque_limit": "10",
+            "joint_vel_limit": "1"
+        },
+        "joint3_r": {
+            "joint_types": "JointModelRZ",
+            "joint_pos_ub": "3.0543261909900763",
+            "joint_pos_lb": "-3.0543261909900763",
+            "joint_torque_limit": "10",
+            "joint_vel_limit": "1"
+        },
+        "joint4_r": {
+            "joint_types": "JointModelRZ",
+            "joint_pos_ub": "3.0543261909900763",
+            "joint_pos_lb": "-3.0543261909900763",
+            "joint_torque_limit": "10",
+            "joint_vel_limit": "1"
+        },
+        "joint5_r": {
+            "joint_types": "JointModelRZ",
+            "joint_pos_ub": "3.7524578917878082",
+            "joint_pos_lb": "-3.7524578917878082",
+            "joint_torque_limit": "10",
+            "joint_vel_limit": "1"
+        }
+    }
+}
