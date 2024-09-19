@@ -24,7 +24,7 @@
         xyz="0.00152399 0.00000000 0.03933482"
         rpy="0 0 0" />
       <mass
-        value="0.47278619  " />
+        value="0.47278619" />
       <inertia
         ixx="0.00125767"
         ixy="0.00000000"
@@ -39,7 +39,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="meshes/ASM_LINK_0.STL" />
+          filename="../meshes/ASM_LINK_0_EM.STL" />
       </geometry>
       <material
         name="">
@@ -53,7 +53,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="meshes/ASM_LINK_0.STL" />
+          filename="../meshes/ASM_LINK_0_EM.STL" />
       </geometry>
     </collision>
   </link>
@@ -100,7 +100,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="meshes/ASM_LINK_1.STL" />
+          filename="../meshes/ASM_LINK_1_EM.STL" />
       </geometry>
       <material
         name="">
@@ -114,7 +114,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="meshes/ASM_LINK_1.STL" />
+          filename="../meshes/ASM_LINK_1_EM.STL" />
       </geometry>
     </collision>
   </link>
@@ -145,7 +145,7 @@
         xyz="-0.00000660 -0.08341316 0.02269460"
         rpy="0 0 0" />
       <mass
-        value="1.08543372  " />
+        value="1.08543372" />
 	<inertia
 	  ixx="0.00639468"
 	  ixy="0.00000000"
@@ -160,7 +160,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="meshes/ASM_LINK_2.STL" />
+          filename="../meshes/ASM_LINK_2_EM.STL" />
       </geometry>
       <material
         name="">
@@ -174,7 +174,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="meshes/ASM_LINK_2.STL" />
+          filename="../meshes/ASM_LINK_2_EM.STL" />
       </geometry>
     </collision>
   </link>
@@ -221,7 +221,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="meshes/ASM_LINK_3.STL" />
+          filename="../meshes/ASM_LINK_3_EM.STL" />
       </geometry>
       <material
         name="">
@@ -235,7 +235,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="meshes/ASM_LINK_3.STL" />
+          filename="../meshes/ASM_LINK_3_EM.STL" />
       </geometry>
     </collision>
   </link>
@@ -281,7 +281,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="meshes/ASM_LINK_4.STL" />
+          filename="../meshes/ASM_LINK_4_EM.STL" />
       </geometry>
       <material
         name="">
@@ -295,7 +295,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="meshes/ASM_LINK_4.STL" />
+          filename="../meshes/ASM_LINK_4_EM.STL" />
       </geometry>
     </collision>
   </link>
@@ -326,7 +326,7 @@
         xyz="0.00005661 .03465433 0.20951316"
         rpy="0 0 0" />
       <mass
-        value="8.50980173 " />
+        value="8.50980173" />
 	<inertia
 	  ixx="0.34047402"
 	  ixy="-0.00001524"
@@ -341,7 +341,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="meshes/ASM_LINK_5.STL" />
+          filename="../meshes/ASM_LINK_5_EM.STL" />
       </geometry>
       <material
         name="">
@@ -355,7 +355,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="meshes/ASM_LINK_5.STL" />
+          filename="../meshes/ASM_LINK_5_EM.STL" />
       </geometry>
     </collision>
   </link>
@@ -402,7 +402,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="meshes/ASM_LINK_6.STL" />
+          filename="../meshes/ASM_LINK_6_EM.STL" />
       </geometry>
       <material
         name="">
@@ -416,7 +416,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="meshes/ASM_LINK_6.STL" />
+          filename="../meshes/ASM_LINK_6_EM.STL" />
       </geometry>
     </collision>
   </link>
@@ -447,7 +447,7 @@
         xyz="0.00000000 0.00001181 0.04502358"
         rpy="0 0 0" />
       <mass
-        value="0.47459064 " />
+        value="0.47459064" />
 	<inertia
 	  ixx="0.00106970"
 	  ixy="0.0"
@@ -462,7 +462,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="meshes/ASM_LINK_7.STL" />
+          filename="../meshes/ASM_LINK_7_EM.STL" />
       </geometry>
       <material
         name="">
@@ -476,7 +476,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="meshes/ASM_LINK_7.STL" />
+          filename="../meshes/ASM_LINK_7_EM.STL" />
       </geometry>
     </collision>
   </link>
