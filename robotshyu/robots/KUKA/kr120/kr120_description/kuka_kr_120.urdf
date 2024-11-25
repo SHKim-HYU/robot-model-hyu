@@ -205,7 +205,7 @@
   <joint name="tcp_joint" type="fixed">
     <parent link="link6"/>
     <child link="tcp"/>
-    <origin rpy="-1.57079632679 0.0 -1.57079632679" xyz="0.0 0.0 -0.02"/>
+    <origin rpy="3.1415926536 0.0 1.5707963268" xyz="0.0 0.0 -0.02"/>
   </joint> 
   
 </robot>
