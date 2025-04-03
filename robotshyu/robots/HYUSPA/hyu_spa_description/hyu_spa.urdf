@@ -140,6 +140,21 @@
 
     <inertial>
       <mass value="0.59063954"/>
+      <origin rpy="0 0 0" xyz="0.00099609 0.00016953 -0.05061212"/>
+      <inertia ixx="0.00030422" ixy="7.6e-07" ixz="-2.85e-06" iyy="0.00042387" iyz="-1.32e-06" izz="0.0003724"/>
+    </inertial>
+  </link>
+  <link name="link7">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="meshes/stl/hyu_spa_7.stl"/>
+      </geometry>
+      <material name="metal_grey"/>
+    </visual>
+
+    <inertial>
+      <mass value="0.59063954"/>
       <origin rpy="0 0 0" xyz="0.00221466 0.00090916 -0.00853216"/>
       <inertia ixx="0.00030422" ixy="7.6e-07" ixz="-2.85e-06" iyy="0.00042387" iyz="-1.32e-06" izz="0.0003724"/>
     </inertial>
@@ -193,8 +208,15 @@
     <axis xyz="1 0 0"/>
     <limit effort="10" lower="-3.752457891787808" upper="3.752457891787808" velocity="1"/>
   </joint>
-  <joint name="tcp_fixed" type="fixed">
+  <joint name="joint6" type="revolute">
     <parent link="link6"/>
+    <child link="link7"/>
+    <origin rpy="0 0 0" xyz="0 0 -0.084"/>
+    <axis xyz="0 1 0"/>
+    <limit effort="10" lower="-3.752457891787808" upper="3.752457891787808" velocity="1"/>
+  </joint>
+  <joint name="tcp_fixed" type="fixed">
+    <parent link="link7"/>
     <child link="tcp"/>
     <origin rpy="0 0 0" xyz="0 0 0.0795"/>
   </joint>
