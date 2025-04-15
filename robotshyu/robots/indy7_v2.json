@@ -14,6 +14,8 @@
     "inverse_dynamics_path": "NRMK/indy7_v2/indy7_v2_id.casadi",
     "Jacobian_space_path": "NRMK/indy7_v2/indy7_v2_J_s.casadi",
     "Jacobian_body_path": "NRMK/indy7_v2/indy7_v2_J_b.casadi",
+    "Jacobian_derivative_space_path": "NRMK/indy7_v2/indy7_v2_dJ_s.casadi",
+    "Jacobian_derivative_body_path": "NRMK/indy7_v2/indy7_v2_dJ_b.casadi",
     "mass_matrix_path": "NRMK/indy7_v2/indy7_v2_M.casadi",
     "mass_inverse_matrix_path": "NRMK/indy7_v2/indy7_v2_Minv.casadi",
     "coriolis_path": "NRMK/indy7_v2/indy7_v2_C.casadi",
