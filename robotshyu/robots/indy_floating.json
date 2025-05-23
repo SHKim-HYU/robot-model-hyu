@@ -1,0 +1,57 @@
+{
+    "name": "indy_floating",
+    "n_dof": "9",
+    "n_joints": "5",
+    "n_q": "10",
+    "n_frames": "11",
+    "gravity": {
+        "x": "0",
+        "y": "0",
+        "z": "-9.8100000000000005"
+    },
+    "forward_kinematics_path": "NRMK/test/indy_floating_fk.casadi",
+    "forward_dynamics_path": "NRMK/test/indy_floating_fd.casadi",
+    "inverse_dynamics_path": "NRMK/test/indy_floating_id.casadi",
+    "center_of_mass_path": "NRMK/test/indy_floating_CoM_x.casadi",
+    "Jacobian_forward_dynamics_path": "NRMK/test/indy_floating_J_fd.casadi",
+    "Jacobian_inverse_dynamics_path": "NRMK/test/indy_floating_J_id.casadi",
+    "Jacobian_space_path": "NRMK/test/indy_floating_J_s.casadi",
+    "Jacobian_body_path": "NRMK/test/indy_floating_J_b.casadi",
+    "Jacobian_derivative_space_path": "NRMK/test/indy_floating_dJ_s.casadi",
+    "Jacobian_derivative_body_path": "NRMK/test/indy_floating_dJ_b.casadi",
+    "mass_matrix_path": "NRMK/test/indy_floating_M.casadi",
+    "mass_inverse_matrix_path": "NRMK/test/indy_floating_Minv.casadi",
+    "coriolis_path": "NRMK/test/indy_floating_C.casadi",
+    "gravity_path": "NRMK/test/indy_floating_G.casadi",
+    "urdf_path": "NRMK/test/description/indy_floating.urdf",
+    "joints": {
+        "root_joint": {
+            "joint_types": "JointModelFreeFlyer",
+            "joint_pos_ub": "1.7976931348623157e+308",
+            "joint_pos_lb": "-1.7976931348623157e+308",
+            "joint_torque_limit": "1.7976931348623157e+308",
+            "joint_vel_limit": "1.7976931348623157e+308"
+        },
+        "joint1": {
+            "joint_types": "JointModelRZ",
+            "joint_pos_ub": "1.7976931348623157e+308",
+            "joint_pos_lb": "-1.7976931348623157e+308",
+            "joint_torque_limit": "1.7976931348623157e+308",
+            "joint_vel_limit": "1.7976931348623157e+308"
+        },
+        "joint2": {
+            "joint_types": "JointModelRY",
+            "joint_pos_ub": "1.7976931348623157e+308",
+            "joint_pos_lb": "-1.7976931348623157e+308",
+            "joint_torque_limit": "1.7976931348623157e+308",
+            "joint_vel_limit": "1.7976931348623157e+308"
+        },
+        "joint3": {
+            "joint_types": "JointModelRZ",
+            "joint_pos_ub": "1.7976931348623157e+308",
+            "joint_pos_lb": "-1.7976931348623157e+308",
+            "joint_torque_limit": "1.7976931348623157e+308",
+            "joint_vel_limit": "1.7976931348623157e+308"
+        }
+    }
+}
