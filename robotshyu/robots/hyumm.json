@@ -27,6 +27,7 @@
     "coriolis_path": "HYUMM/hyumm_C.casadi",
     "gravity_path": "HYUMM/hyumm_G.casadi",
     "urdf_path": "HYUMM/hyumm_description/hyumm.urdf",
+    "urdf_nom_path": "HYUMM/hyumm_description/hyumm_nom.urdf",
     "urdf_frame_path": "HYUMM/hyumm_description/hyumm_frame.urdf",
     "joints": {
         "lin_x_joint": {

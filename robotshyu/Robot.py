@@ -563,6 +563,8 @@ class Robot:
         # TODO: Add URDF path from json
         if 'urdf_path' in json_dict:
             self.urdf_path = robots_dir + str(json_dict["urdf_path"])
+        if 'urdf_nom_path' in json_dict:
+            self.urdf_nom_path = robots_dir + str(json_dict["urdf_nom_path"])
         if 'urdf_frame_path' in json_dict:
             self.urdf_frame_path = robots_dir + str(json_dict["urdf_frame_path"])
 

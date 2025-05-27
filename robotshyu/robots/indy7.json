@@ -24,6 +24,7 @@
     "coriolis_path": "NRMK/indy7/indy7_C.casadi",
     "gravity_path": "NRMK/indy7/indy7_G.casadi",
     "urdf_path": "NRMK/indy7/indy7_description/indy7.urdf",
+    "urdf_nom_path": "NRMK/indy7/indy7_description/indy7_nom.urdf",
     "urdf_frame_path": "NRMK/indy7/indy7_description/indy7_frame.urdf",
     "joints": {
         "joint0": {
