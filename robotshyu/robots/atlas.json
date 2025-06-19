@@ -14,6 +14,7 @@
     "inverse_dynamics_path" : "Atlas/atlas_id.casadi",
     "Jacobian_forward_dynamics_path": "Atlas/atlas_J_fd.casadi",
     "Jacobian_inverse_dynamics_path": "Atlas/atlas_J_id.casadi",
+    "urdf_path": "Atlas/Atlas_description/urdf/atlas_with_meshes.urdf",
     "joints": {
         "root_joint": {
             "joint_types": "JointModelFreeFlyer",

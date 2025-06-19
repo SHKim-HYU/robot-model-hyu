@@ -1,0 +1,233 @@
+{
+    "name": "g1_29dof",
+    "n_dof": "29",
+    "n_joints": "30",
+    "n_q": "29",
+    "n_frames": "80",
+    "gravity": {
+        "x": "0",
+        "y": "0",
+        "z": "-9.8100000000000005"
+    },
+    "forward_kinematics_path": "Unitree/g1_29dof/g1_29dof_fk.casadi",
+    "forward_dynamics_path": "Unitree/g1_29dof/g1_29dof_fd.casadi",
+    "inverse_dynamics_path": "Unitree/g1_29dof/g1_29dof_id.casadi",
+    "center_of_mass_path": "Unitree/g1_29dof/g1_29dof_CoM_x.casadi",
+    "jacobian_center_of_mass_path": "Unitree/g1_29dof/g1_29dof_J_com.casadi",
+    "Jacobian_forward_dynamics_path": "Unitree/g1_29dof/g1_29dof_J_fd.casadi",
+    "Jacobian_inverse_dynamics_path": "Unitree/g1_29dof/g1_29dof_J_id.casadi",
+    "Jacobian_space_path": "Unitree/g1_29dof/g1_29dof_J_s.casadi",
+    "Jacobian_body_path": "Unitree/g1_29dof/g1_29dof_J_b.casadi",
+    "Jacobian_derivative_space_path": "Unitree/g1_29dof/g1_29dof_dJ_s.casadi",
+    "Jacobian_derivative_body_path": "Unitree/g1_29dof/g1_29dof_dJ_b.casadi",
+    "mass_matrix_path": "Unitree/g1_29dof/g1_29dof_M.casadi",
+    "mass_inverse_matrix_path": "Unitree/g1_29dof/g1_29dof_Minv.casadi",
+    "coriolis_path": "Unitree/g1_29dof/g1_29dof_C.casadi",
+    "gravity_path": "Unitree/g1_29dof/g1_29dof_G.casadi",
+    "urdf_path": "Unitree/g1_29dof//g1_29dof_description/g1_29dof.urdf",
+    "joints": {
+        "left_hip_pitch_joint": {
+            "joint_types": "JointModelRY",
+            "joint_pos_ub": "2.8797999999999999",
+            "joint_pos_lb": "-2.5306999999999999",
+            "joint_torque_limit": "88",
+            "joint_vel_limit": "32"
+        },
+        "left_hip_roll_joint": {
+            "joint_types": "JointModelRX",
+            "joint_pos_ub": "2.9670999999999998",
+            "joint_pos_lb": "-0.52359999999999995",
+            "joint_torque_limit": "88",
+            "joint_vel_limit": "32"
+        },
+        "left_hip_yaw_joint": {
+            "joint_types": "JointModelRZ",
+            "joint_pos_ub": "2.7576000000000001",
+            "joint_pos_lb": "-2.7576000000000001",
+            "joint_torque_limit": "88",
+            "joint_vel_limit": "32"
+        },
+        "left_knee_joint": {
+            "joint_types": "JointModelRY",
+            "joint_pos_ub": "2.8797999999999999",
+            "joint_pos_lb": "-0.087266999999999997",
+            "joint_torque_limit": "139",
+            "joint_vel_limit": "20"
+        },
+        "left_ankle_pitch_joint": {
+            "joint_types": "JointModelRY",
+            "joint_pos_ub": "0.52359999999999995",
+            "joint_pos_lb": "-0.87266999999999995",
+            "joint_torque_limit": "35",
+            "joint_vel_limit": "30"
+        },
+        "left_ankle_roll_joint": {
+            "joint_types": "JointModelRX",
+            "joint_pos_ub": "0.26179999999999998",
+            "joint_pos_lb": "-0.26179999999999998",
+            "joint_torque_limit": "35",
+            "joint_vel_limit": "30"
+        },
+        "right_hip_pitch_joint": {
+            "joint_types": "JointModelRY",
+            "joint_pos_ub": "2.8797999999999999",
+            "joint_pos_lb": "-2.5306999999999999",
+            "joint_torque_limit": "88",
+            "joint_vel_limit": "32"
+        },
+        "right_hip_roll_joint": {
+            "joint_types": "JointModelRX",
+            "joint_pos_ub": "0.52359999999999995",
+            "joint_pos_lb": "-2.9670999999999998",
+            "joint_torque_limit": "88",
+            "joint_vel_limit": "32"
+        },
+        "right_hip_yaw_joint": {
+            "joint_types": "JointModelRZ",
+            "joint_pos_ub": "2.7576000000000001",
+            "joint_pos_lb": "-2.7576000000000001",
+            "joint_torque_limit": "88",
+            "joint_vel_limit": "32"
+        },
+        "right_knee_joint": {
+            "joint_types": "JointModelRY",
+            "joint_pos_ub": "2.8797999999999999",
+            "joint_pos_lb": "-0.087266999999999997",
+            "joint_torque_limit": "139",
+            "joint_vel_limit": "20"
+        },
+        "right_ankle_pitch_joint": {
+            "joint_types": "JointModelRY",
+            "joint_pos_ub": "0.52359999999999995",
+            "joint_pos_lb": "-0.87266999999999995",
+            "joint_torque_limit": "35",
+            "joint_vel_limit": "30"
+        },
+        "right_ankle_roll_joint": {
+            "joint_types": "JointModelRX",
+            "joint_pos_ub": "0.26179999999999998",
+            "joint_pos_lb": "-0.26179999999999998",
+            "joint_torque_limit": "35",
+            "joint_vel_limit": "30"
+        },
+        "waist_yaw_joint": {
+            "joint_types": "JointModelRZ",
+            "joint_pos_ub": "2.6179999999999999",
+            "joint_pos_lb": "-2.6179999999999999",
+            "joint_torque_limit": "88",
+            "joint_vel_limit": "32"
+        },
+        "waist_roll_joint": {
+            "joint_types": "JointModelRX",
+            "joint_pos_ub": "0.52000000000000002",
+            "joint_pos_lb": "-0.52000000000000002",
+            "joint_torque_limit": "35",
+            "joint_vel_limit": "30"
+        },
+        "waist_pitch_joint": {
+            "joint_types": "JointModelRY",
+            "joint_pos_ub": "0.52000000000000002",
+            "joint_pos_lb": "-0.52000000000000002",
+            "joint_torque_limit": "35",
+            "joint_vel_limit": "30"
+        },
+        "left_shoulder_pitch_joint": {
+            "joint_types": "JointModelRY",
+            "joint_pos_ub": "2.6703999999999999",
+            "joint_pos_lb": "-3.0891999999999999",
+            "joint_torque_limit": "25",
+            "joint_vel_limit": "37"
+        },
+        "left_shoulder_roll_joint": {
+            "joint_types": "JointModelRX",
+            "joint_pos_ub": "2.2515000000000001",
+            "joint_pos_lb": "-1.5882000000000001",
+            "joint_torque_limit": "25",
+            "joint_vel_limit": "37"
+        },
+        "left_shoulder_yaw_joint": {
+            "joint_types": "JointModelRZ",
+            "joint_pos_ub": "2.6179999999999999",
+            "joint_pos_lb": "-2.6179999999999999",
+            "joint_torque_limit": "25",
+            "joint_vel_limit": "37"
+        },
+        "left_elbow_joint": {
+            "joint_types": "JointModelRY",
+            "joint_pos_ub": "2.0943999999999998",
+            "joint_pos_lb": "-1.0471999999999999",
+            "joint_torque_limit": "25",
+            "joint_vel_limit": "37"
+        },
+        "left_wrist_roll_joint": {
+            "joint_types": "JointModelRX",
+            "joint_pos_ub": "1.9722220539999999",
+            "joint_pos_lb": "-1.9722220539999999",
+            "joint_torque_limit": "25",
+            "joint_vel_limit": "37"
+        },
+        "left_wrist_pitch_joint": {
+            "joint_types": "JointModelRY",
+            "joint_pos_ub": "1.6144295580000001",
+            "joint_pos_lb": "-1.6144295580000001",
+            "joint_torque_limit": "5",
+            "joint_vel_limit": "22"
+        },
+        "left_wrist_yaw_joint": {
+            "joint_types": "JointModelRZ",
+            "joint_pos_ub": "1.6144295580000001",
+            "joint_pos_lb": "-1.6144295580000001",
+            "joint_torque_limit": "5",
+            "joint_vel_limit": "22"
+        },
+        "right_shoulder_pitch_joint": {
+            "joint_types": "JointModelRY",
+            "joint_pos_ub": "2.6703999999999999",
+            "joint_pos_lb": "-3.0891999999999999",
+            "joint_torque_limit": "25",
+            "joint_vel_limit": "37"
+        },
+        "right_shoulder_roll_joint": {
+            "joint_types": "JointModelRX",
+            "joint_pos_ub": "1.5882000000000001",
+            "joint_pos_lb": "-2.2515000000000001",
+            "joint_torque_limit": "25",
+            "joint_vel_limit": "37"
+        },
+        "right_shoulder_yaw_joint": {
+            "joint_types": "JointModelRZ",
+            "joint_pos_ub": "2.6179999999999999",
+            "joint_pos_lb": "-2.6179999999999999",
+            "joint_torque_limit": "25",
+            "joint_vel_limit": "37"
+        },
+        "right_elbow_joint": {
+            "joint_types": "JointModelRY",
+            "joint_pos_ub": "2.0943999999999998",
+            "joint_pos_lb": "-1.0471999999999999",
+            "joint_torque_limit": "25",
+            "joint_vel_limit": "37"
+        },
+        "right_wrist_roll_joint": {
+            "joint_types": "JointModelRX",
+            "joint_pos_ub": "1.9722220539999999",
+            "joint_pos_lb": "-1.9722220539999999",
+            "joint_torque_limit": "25",
+            "joint_vel_limit": "37"
+        },
+        "right_wrist_pitch_joint": {
+            "joint_types": "JointModelRY",
+            "joint_pos_ub": "1.6144295580000001",
+            "joint_pos_lb": "-1.6144295580000001",
+            "joint_torque_limit": "5",
+            "joint_vel_limit": "22"
+        },
+        "right_wrist_yaw_joint": {
+            "joint_types": "JointModelRZ",
+            "joint_pos_ub": "1.6144295580000001",
+            "joint_pos_lb": "-1.6144295580000001",
+            "joint_torque_limit": "5",
+            "joint_vel_limit": "22"
+        }
+    }
+}
