@@ -15,7 +15,7 @@ extern "C" {
   #define _CASADI_NAMESPACE_CONCAT(NS, ID) NS ## ID
   #define CASADI_PREFIX(ID) CASADI_NAMESPACE_CONCAT(CODEGEN_PREFIX, ID)
 #else
-  #define CASADI_PREFIX(ID) KARM_EQM_J_b_ ## ID
+  #define CASADI_PREFIX(ID) KARM_EQM_dJ_b_ ## ID
 #endif
 
 #include <math.h>

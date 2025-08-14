@@ -15,7 +15,7 @@ extern "C" {
   #define _CASADI_NAMESPACE_CONCAT(NS, ID) NS ## ID
   #define CASADI_PREFIX(ID) CASADI_NAMESPACE_CONCAT(CODEGEN_PREFIX, ID)
 #else
-  #define CASADI_PREFIX(ID) indy7_v2_J_b_ ## ID
+  #define CASADI_PREFIX(ID) indy12_v2_J_b_ ## ID
 #endif
 
 #include <math.h>
@@ -159,7 +159,7 @@ static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw,
   a44=(a43*a39);
   a42=(a42-a44);
   a42=(a37+a42);
-  a44=8.4099999999999994e-02;
+  a44=2.6229999999999998e-01;
   a45=(a44*a41);
   a45=(a42+a45);
   a46=(a20*a45);
