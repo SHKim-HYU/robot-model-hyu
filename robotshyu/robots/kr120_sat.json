@@ -1,0 +1,69 @@
+{
+    "name": "kuka_kr_120_sat",
+    "n_dof": "6",
+    "n_joints": "7",
+    "n_q": "6",
+    "n_frames": "32",
+    "gravity": {
+        "x": "0",
+        "y": "0",
+        "z": "-9.8100000000000005"
+    },
+    "library_path": "/opt/KPOS_Foundation/models/robots/KUKA/kuka_kr_120_sat",
+    "forward_kinematics_path": "KUKA/kr120_sat/casadi/kuka_kr_120_sat_fk.casadi",
+    "forward_dynamics_path": "KUKA/kr120_sat/casadi/kuka_kr_120_sat_fd.casadi",
+    "inverse_dynamics_path": "KUKA/kr120_sat/casadi/kuka_kr_120_sat_id.casadi",
+    "Jacobian_space_path": "KUKA/kr120_sat/casadi/kuka_kr_120_sat_J_s.casadi",
+    "Jacobian_body_path": "KUKA/kr120_sat/casadi/kuka_kr_120_sat_J_b.casadi",
+    "Jacobian_derivative_space_path": "KUKA/kr120_sat/casadi/kuka_kr_120_sat_dJ_s.casadi",
+    "Jacobian_derivative_body_path": "KUKA/kr120_sat/casadi/kuka_kr_120_sat_dJ_b.casadi",
+    "mass_matrix_path": "KUKA/kr120_sat/casadi/kuka_kr_120_sat_M.casadi",
+    "mass_inverse_matrix_path": "KUKA/kr120_sat/casadi/kuka_kr_120_sat_Minv.casadi",
+    "coriolis_path": "KUKA/kr120_sat/casadi/kuka_kr_120_sat_C.casadi",
+    "gravity_path": "KUKA/kr120_sat/casadi/kuka_kr_120_sat_G.casadi",
+    "urdf_path": "KUKA/kr120_sat/description/kuka_kr_120_sat.urdf",
+    "joints": {
+        "joint1": {
+            "joint_types": "JointModelRZ",
+            "joint_pos_ub": "3.2288999999999999",
+            "joint_pos_lb": "-3.2288999999999999",
+            "joint_torque_limit": "100000",
+            "joint_vel_limit": "1000"
+        },
+        "joint2": {
+            "joint_types": "JointModelRZ",
+            "joint_pos_ub": "-0.087300000000000003",
+            "joint_pos_lb": "-2.4434999999999998",
+            "joint_torque_limit": "100000",
+            "joint_vel_limit": "1000"
+        },
+        "joint3": {
+            "joint_types": "JointModelRZ",
+            "joint_pos_ub": "2.9321999999999999",
+            "joint_pos_lb": "-2.0943999999999998",
+            "joint_torque_limit": "100000",
+            "joint_vel_limit": "1000"
+        },
+        "joint4": {
+            "joint_types": "JointModelRZ",
+            "joint_pos_ub": "6.1086999999999998",
+            "joint_pos_lb": "-6.1086999999999998",
+            "joint_torque_limit": "100000",
+            "joint_vel_limit": "1000"
+        },
+        "joint5": {
+            "joint_types": "JointModelRZ",
+            "joint_pos_ub": "2.1817000000000002",
+            "joint_pos_lb": "-2.1817000000000002",
+            "joint_torque_limit": "100000",
+            "joint_vel_limit": "1000"
+        },
+        "joint6": {
+            "joint_types": "JointModelRZ",
+            "joint_pos_ub": "6.1086999999999998",
+            "joint_pos_lb": "-6.1086999999999998",
+            "joint_torque_limit": "100000",
+            "joint_vel_limit": "1000"
+        }
+    }
+}
