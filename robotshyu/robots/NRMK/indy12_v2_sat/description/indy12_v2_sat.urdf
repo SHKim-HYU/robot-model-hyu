@@ -64,28 +64,28 @@
     <child link="link_pz"/>
     <origin rpy="0 0 0" xyz="+0.0 +0.0 0.0"/>
     <axis xyz="0 0 1"/>
-    <limit effort="10000" lower="-2" upper="2" velocity="1000"/>
+    <limit effort="10000" lower="-1" upper="10" velocity="1000"/>
   </joint>
   <joint name="Rz" type="revolute">
     <parent link="link_pz"/>
     <child link="link_rz"/>
     <origin rpy="0 0 0" xyz="+0.0 +0.0 0.0"/>
     <axis xyz="0 0 1"/>
-    <limit effort="10000" lower="-3.14" upper="3.14" velocity="1000"/>
+    <limit effort="10000" lower="-6.28" upper="6.28" velocity="1000"/>
   </joint>
   <joint name="Ry" type="revolute">
     <parent link="link_rz"/>
     <child link="link_ry"/>
     <origin rpy="0 0 0" xyz="+0.0 +0.0 0.0"/>
     <axis xyz="0 1 0"/>
-    <limit effort="10000" lower="-3.14" upper="3.14" velocity="1000"/>
+    <limit effort="10000" lower="-6.28" upper="6.28" velocity="1000"/>
   </joint>
   <joint name="Rx" type="revolute">
     <parent link="link_ry"/>
     <child link="l_tcp"/>
     <origin rpy="0 0 0" xyz="+0.0 +0.0 0.0"/>
     <axis xyz="1 0 0"/>
-    <limit effort="10000" lower="-3.14" upper="3.14" velocity="1000"/>
+    <limit effort="10000" lower="-6.28" upper="6.28" velocity="1000"/>
   </joint>
 
   <link name="l_tcp">
@@ -266,12 +266,6 @@
     </inertial>
   </link>
   <link name="tool_plange">
-      <origin rpy="0 0 0" xyz="-0.00191829, -0.00711865, 0.0632705"/>
- <inertial>
-        <origin xyz="-0.00191829, -0.00711865, 0.0632705"  rpy="0 0 0" />        
-        <mass value="2.6"/>
-        <inertia  ixx="0.00716708"      ixy="0.000227877"      ixz="-0.000273462"      iyy="0.00704539"      iyz="0.000290156"      izz=" 0.00665249" />
-     </inertial>
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
@@ -279,7 +273,6 @@
       </geometry>
       <material name="metal_grey"/>
     </visual>
-
     <inertial>
       <origin rpy="0 0 0" xyz="0.0003115 -0.0005641 0.0364598"/>
       <mass value="0.300"/>
