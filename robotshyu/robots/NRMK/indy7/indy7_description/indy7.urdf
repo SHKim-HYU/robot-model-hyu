@@ -228,6 +228,19 @@
 		</inertial>
   </link>
   <link name="tcp">
+  <visual>
+      <origin xyz="0 0 0.05" rpy="0 0 0"/> <!-- 중심을 위로 5cm 올림 -->
+      <geometry>
+        <box size="0.1 0.1 0.1"/>
+      </geometry>
+      <material name="white"/>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0.05" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.1 0.1 0.1"/>
+      </geometry>
+    </collision>
     <inertial>
       <mass value="0.000001" />
       <origin xyz="0.0 0.0 0.0" rpy="0 0 0" />

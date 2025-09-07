@@ -22,6 +22,7 @@
     "coriolis_path": "KUKA/kr250_rail/casadi/kuka_kr_250_rail_C.casadi",
     "gravity_path": "KUKA/kr250_rail/casadi/kuka_kr_250_rail_G.casadi",
     "urdf_path": "KUKA/kr250_rail/description/kuka_kr_250_rail.urdf",
+    "urdf_nom_path": "KUKA/kr250_rail/description/kuka_kr_250_rail_nom.urdf",
     "joints": {
         "jointE": {
             "joint_types": "JointModelPX",
