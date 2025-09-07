@@ -5,8 +5,9 @@
   <material name="white_grey"> <color rgba="0.8 0.8 0.8 1"/> </material>
   <material name="black"> <color rgba="0.0 0.0 0.0 1"/> </material>
   <material name="white"> <color rgba="1 1 1 1"/> </material>
-    <material name="darkblue"> <color rgba="0 0 0.5 1"/> </material>
-        <material name="gold"> <color rgba="  0.82745      0.68627      0.21569 1"/> </material>
+  <material name="darkblue"> <color rgba="0 0 0.5 1"/> </material>
+  <material name="gold"> <color rgba="  0.82745      0.68627      0.21569 1"/> </material>
+  <material name="green"> <color rgba="0.0 0.8 0.0 1.0"/> </material>
 
   <link name="world"/>
 
@@ -17,7 +18,7 @@
       <geometry>
         <mesh filename="meshes/kr250/rail_rail.stl"/>
       </geometry>
-      <material name="black"/>
+      <material name="green"/>
     </visual>
    
   </link>
@@ -27,7 +28,7 @@
       <geometry>
         <mesh filename="meshes/kr250/rail_base.stl"/>
       </geometry>
-      <material name="black"/>
+      <material name="green"/>
     </visual>
   
   </link>
@@ -37,7 +38,7 @@
       <geometry>
         <mesh filename="meshes/kr250/kuka_kr_250_base_link.stl"/>
       </geometry>
-      <material name="black"/>
+      <material name="green"/>
     </visual>
    
     <inertial>
@@ -52,7 +53,7 @@
       <geometry>
         <mesh filename="meshes/kr250/kuka_kr_250_link1.stl"/>
       </geometry>
-      <material name="black"/>
+      <material name="green"/>
     </visual>
    
     <inertial>
@@ -67,7 +68,7 @@
       <geometry>
         <mesh filename="meshes/kr250/kuka_kr_250_link2.stl"/>
       </geometry>
-      <material name="black"/>
+      <material name="green"/>
     </visual>
    
     <inertial>
@@ -82,7 +83,7 @@
       <geometry>
         <mesh filename="meshes/kr250/kuka_kr_250_link3.stl"/>
       </geometry>
-      <material name="black"/>
+      <material name="green"/>
     </visual>
    
     <inertial>
@@ -97,7 +98,7 @@
       <geometry>
         <mesh filename="meshes/kr250/kuka_kr_250_link4.stl"/>
       </geometry>
-      <material name="black"/>
+      <material name="green"/>
     </visual>
   
     <inertial>
@@ -112,7 +113,7 @@
       <geometry>
         <mesh filename="meshes/kr250/kuka_kr_250_link5.stl"/>
       </geometry>
-      <material name="black"/>
+      <material name="green"/>
     </visual>
 
     <inertial>
@@ -127,7 +128,7 @@
       <geometry>
         <mesh filename="meshes/kr250/kuka_kr_250_link6.stl"/>
       </geometry>
-      <material name="black"/>
+      <material name="green"/>
     </visual>
    
     <inertial>
@@ -218,6 +219,7 @@
         <mesh filename="meshes/ft_sensor.stl"/>
       </geometry>
       <origin rpy="0 0 0" xyz="0.00 0 0"/>
+      <material name="green"/>
     </visual>
     <inertial>
       <mass value="0.001"/>
