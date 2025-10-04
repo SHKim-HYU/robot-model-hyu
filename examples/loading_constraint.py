@@ -1,6 +1,8 @@
 from robotshyu import Robot as rob
 import numpy as np
 
+np.set_printoptions(suppress=True, precision=6, linewidth=200)
+
 def ceil3(p):
     res = np.zeros([3,3])
     res[0,1] = -p[0]; res[1,0] = p[0]
@@ -23,29 +25,41 @@ def TransInv(T):
     return res
 
 robot1=rob.Robot("hyumm_floating")
-robot2=rob.Robot("hyumm_offset_l")
+robot2=rob.Robot("hyumm")
 q_f=np.matrix([1,1,0,0,0,0,1,1,2,3,4,5,6]).T
 qdot_f = np.matrix([1,1,0,0,0,0,1,1,1,1,1,1]).T
 q=np.matrix([1,1,0,1,2,3,4,5,6]).T
 qdot = np.matrix([1,1,0,1,1,1,1,1,1]).T
 tau = np.matrix([1,0,0,0,0,0,0,0,0]).T
 
-Toff = np.identity(4); Toff[0:3,3]=[0.0, -0.4, 0.0]
-Adoff = Adjoint(Toff)
-E0 = np.matrix([[np.cos(q[2]), np.sin(q[2]), 0],
-                [-np.sin(q[2]), np.cos(q[2]), 0],
+Toff = np.identity(4); Toff[0:3,3]=[0.0, -0.0, 0.0]
+Adoff = Adjoint(Toff); Adinvoff = Adjoint(TransInv(Toff))
+E0 = np.matrix([[np.cos(q[2,0]), np.sin(q[2,0]), 0],
+                [-np.sin(q[2,0]), np.cos(q[2,0]), 0],
                 [0,0,0],
                 [0,0,0],
                 [0,0,0],
                 [0,0,1]])
-dE0 = np.matrix([[-qdot[2]*np.sin(q[2]), qdot[2]*np.cos(q[2]), 0],
-                [-qdot[2]*np.cos(q[2]), -qdot[2]*np.sin(q[2]), 0],
+dE0 = np.matrix([[-qdot[2,0]*np.sin(q[2,0]), qdot[2,0]*np.cos(q[2,0]), 0],
+                [-qdot[2,0]*np.cos(q[2,0]), -qdot[2,0]*np.sin(q[2,0]), 0],
                 [0,0,0],
                 [0,0,0],
                 [0,0,0],
                 [0,0,0]])
+E0inv = E0.T
+if -qdot[2,0]!=0:
+    dE0inv = np.matrix([[-np.sin(q[2,0])/qdot[2,0], -np.cos(q[2,0])/qdot[2,0], 0, 0, 0, 0],
+                    [np.cos(q[2,0])/qdot[2,0], -np.sin(q[2,0])/qdot[2,0], 0, 0, 0, 0],
+                    [0,0,0,0,0,0]])
+else:
+    dE0inv = np.matrix([[0,0,0,0,0,0],
+                    [0,0,0,0,0,0],
+                    [0,0,0,0,0,0]])
+
 E0tilde = Adoff@E0
 dE0tilde = Adoff@dE0
+E0invtilde = E0inv@Adinvoff
+dE0invtilde = dE0inv@Adinvoff
 
 M1=robot1.M(q_f); C1=robot1.C(q_f,qdot_f); G1=robot1.G(q_f)
 M1_BB = E0tilde.T@M1[0:6,0:6]@E0tilde; M1_BJ = E0tilde.T@M1[0:6,6:]; M1_JJ = M1[6:,6:]
@@ -62,3 +76,12 @@ qddot1 = np.linalg.pinv(M_1)@(tau-C_1@qdot-G_1)
 
 M2=robot2.M(q); C2=robot2.C(q,qdot); G2=robot2.G(q)
 qddot2 = robot2.fd(q,qdot,tau)
+
+
+J_b1 = robot1.J_b(q_f)
+Jb1 = np.zeros([6,9])
+Jb1[:,0:3] = J_b1[0:6,0:6]@E0tilde
+Jb1[:,3:] = J_b1[:,6:]
+
+Jb2 = robot2.J_b(q)
+
