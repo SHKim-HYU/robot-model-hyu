@@ -107,11 +107,7 @@
         <mesh
           filename="meshes/stl/base_link.STL" />
       </geometry>
-      <material
-        name="">
-        <color
-          rgba="0.79216 0.81961 0.93333 1" />
-      </material>
+      <material name="green"/>
     </visual>
   </link>  
 
@@ -122,7 +118,7 @@
       <geometry>
         <mesh filename="meshes/stl/Indy7_0.stl"/>
       </geometry>
-      <material name="metal_grey"/>
+      <material name="green"/>
     </visual>
 
     <inertial>
@@ -137,7 +133,7 @@
       <geometry>
         <mesh filename="meshes/stl/Indy7_1.stl"/>
       </geometry>
-      <material name="metal_grey"/>
+      <material name="green"/>
     </visual>
 
     <inertial>
@@ -152,7 +148,7 @@
       <geometry>
         <mesh filename="meshes/stl/Indy7_2.stl"/>
       </geometry>
-      <material name="metal_grey"/>
+      <material name="green"/>
     </visual>
 
     <inertial>
@@ -167,7 +163,7 @@
       <geometry>
         <mesh filename="meshes/stl/Indy7_3.stl"/>
       </geometry>
-      <material name="metal_grey"/>
+      <material name="green"/>
     </visual>
 
     <inertial>
@@ -182,7 +178,7 @@
       <geometry>
         <mesh filename="meshes/stl/Indy7_4.stl"/>
       </geometry>
-      <material name="metal_grey"/>
+      <material name="green"/>
     </visual>
 
     <inertial>
@@ -197,7 +193,7 @@
       <geometry>
         <mesh filename="meshes/stl/Indy7_5.stl"/>
       </geometry>
-      <material name="metal_grey"/>
+      <material name="green"/>
     </visual>
 
     <inertial>
@@ -212,7 +208,7 @@
       <geometry>
         <mesh filename="meshes/stl/Indy7_6.stl"/>
       </geometry>
-      <material name="metal_grey"/>
+      <material name="green"/>
     </visual>
 
     <inertial>
@@ -227,7 +223,7 @@
       <geometry>
         <mesh filename="meshes/stl/scanner.stl"/>
       </geometry>
-      <material name="metal_grey"/>
+      <material name="green"/>
     </visual>
     <inertial>
 			<origin xyz="0.03402729 0.00001589 0.11025973" rpy="0 0 0"/>
